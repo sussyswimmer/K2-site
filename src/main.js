@@ -113,6 +113,23 @@ async function startWebGL() {
     if (shown < 1) requestAnimationFrame(step);
   };
   requestAnimationFrame(step);
+  // On phones the cards sit over the lower half of the scene: let readers fold them away.
+  document.querySelectorAll('.story .card').forEach((card) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'card__toggle';
+    b.setAttribute('aria-expanded', 'true');
+    b.setAttribute('aria-label', 'Collapse text');
+    b.innerHTML = '<span aria-hidden="true"></span>';
+    b.addEventListener('click', () => {
+      const collapsed = document.documentElement.classList.toggle('cards-collapsed');
+      document.querySelectorAll('.card__toggle').forEach((t) => {
+        t.setAttribute('aria-expanded', String(!collapsed));
+        t.setAttribute('aria-label', collapsed ? 'Expand text' : 'Collapse text');
+      });
+    });
+    card.prepend(b);
+  });
   const chapters = [...document.querySelectorAll('.chapter')];
   const nav = [...document.querySelectorAll('.hud__chapters a')];
   chapters[0].classList.add('is-active');
