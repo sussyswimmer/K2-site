@@ -166,18 +166,27 @@ def albedo(h, spacing, rng, flow=None):
 
     n_big, n_mid, n_fine = fbm(1150), fbm(145), fbm(30, 3)
 
+    # Fall-line streaks (LIC of noise down the slope): gullies, snow couloirs, rock ribs.
+    hs = ndimage.gaussian_filter(h, px(36))
+    sy, sx = np.gradient(hs)
+    mg = np.hypot(sx, sy) + 1e-6
+    rseed = ndimage.gaussian_filter(rng.standard_normal(h.shape).astype(np.float32), px(14))
+    gully = lic((-sx / mg).astype(np.float32), (-sy / mg).astype(np.float32), rseed, steps=18, step=px(18))
+    gully = (gully - gully.mean()) / (gully.std() + 1e-6)
+
     # --- masks -----------------------------------------------------------------
     glacier = (smoothstep(15, 8, slope)
                * smoothstep(110, 15, relief + 20 * n_mid)
                * smoothstep(5900, 5600, h))
     # snow/rock slope cut-off rises with altitude (ice flutings on the high faces)
-    cut = 40 + 15 * smoothstep(5500, 7500, h)
+    cut = 44 + 16 * smoothstep(5500, 7500, h)
+    # snow holds in couloirs and sheds off ribs: streak the slope threshold along the fall line
     snow = (smoothstep(5250, 5700, h + 100 * n_big)
-            * smoothstep(cut + 2, cut - 5, slope + 3 * n_mid + 1.5 * n_fine))
-    # rock bands: roughly horizontal strata exposed on steep high faces
-    strata = np.sin(h / 85.0 + 2.2 * n_mid) * 0.5 + 0.5
-    bands = smoothstep(0.72, 0.92, strata) * smoothstep(cut - 10, cut, slope)
-    snow = snow * (1 - 0.75 * bands)
+            * smoothstep(cut + 3, cut - 4, slope + 1.5 * n_mid + 6.0 * gully + 1.0 * n_fine))
+    # rock bands: thin, roughly horizontal strata exposed on the steepest high faces
+    strata = np.sin(h / 70.0 + 1.4 * n_mid + 0.6 * gully) * 0.5 + 0.5
+    bands = smoothstep(0.86, 0.97, strata) * smoothstep(cut - 6, cut + 2, slope)
+    snow = snow * (1 - 0.6 * bands)
     firn = smoothstep(5000, 5450, h + 60 * n_big)  # upper glaciers: accumulation zone, snow-covered
 
     # Moraine stripes: LIC of noise along the down-valley direction.
@@ -189,17 +198,9 @@ def albedo(h, spacing, rng, flow=None):
     moraine = smoothstep(0.45, 1.25, streak)
     debris = smoothstep(5000, 4450, h + 70 * n_big)  # Baltoro debris cover thickens downstream
 
-    # Rock: gully streaks down the fall line.
-    hs = ndimage.gaussian_filter(h, px(36))
-    sy, sx = np.gradient(hs)
-    mg = np.hypot(sx, sy) + 1e-6
-    rseed = ndimage.gaussian_filter(rng.standard_normal(h.shape).astype(np.float32), px(14))
-    gully = lic((-sx / mg).astype(np.float32), (-sy / mg).astype(np.float32), rseed, steps=14, step=px(18))
-    gully = (gully - gully.mean()) / (gully.std() + 1e-6)
-
     # --- colours (sRGB) --------------------------------------------------------
-    rock_d, rock_l = hex_rgb("#2b2522"), hex_rgb("#5a4e46")
-    scree = hex_rgb("#6f6359")
+    rock_d, rock_l = hex_rgb("#2a2928"), hex_rgb("#5f5a55")
+    scree = hex_rgb("#6c6761")
     snow_c, snow_b = hex_rgb("#f2f5f8"), hex_rgb("#cfd9e5")
     ice, ice_dirty = hex_rgb("#cdd2d6"), hex_rgb("#aaa79f")
     debris_c, moraine_c = hex_rgb("#665d55"), hex_rgb("#403a34")
@@ -208,6 +209,9 @@ def albedo(h, spacing, rng, flow=None):
     col = rock_d * (1 - t_rock) + rock_l * t_rock
     sc = smoothstep(33, 22, slope)[..., None]
     col = col * (1 - sc) + (scree * (0.92 + 0.08 * np.clip(n_mid, -1, 1))[..., None]) * sc
+    # high rock is plastered with rime and spindrift: lift it toward blue-grey with altitude
+    rime = (smoothstep(5900, 7900, h) * (0.42 + 0.12 * np.clip(gully, -1, 1)))[..., None]
+    col = col * (1 - rime) + hex_rgb("#aeb9c6") * rime
 
     t_ice = np.clip(0.45 + 0.25 * n_mid + 0.1 * n_fine, 0, 1)[..., None]
     gl = ice * (1 - t_ice) + ice_dirty * t_ice

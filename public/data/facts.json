@@ -1,0 +1,112 @@
+[
+ {
+  "id": "summit",
+  "hotspot": "summit",
+  "chapter": 5,
+  "title": "Summit",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ {
+  "id": "bottleneck",
+  "hotspot": "bottleneck",
+  "chapter": 4,
+  "title": "Bottleneck",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ {
+  "id": "camp-4",
+  "hotspot": "camp-4",
+  "chapter": 3,
+  "title": "Camp 4",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ {
+  "id": "camp-3",
+  "hotspot": "camp-3",
+  "chapter": 3,
+  "title": "Camp 3",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ {
+  "id": "camp-2",
+  "hotspot": "camp-2",
+  "chapter": 3,
+  "title": "Camp 2",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ {
+  "id": "camp-1",
+  "hotspot": "camp-1",
+  "chapter": 3,
+  "title": "Camp 1",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ {
+  "id": "abc",
+  "hotspot": "abc",
+  "chapter": 3,
+  "title": "Abc",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ {
+  "id": "base-camp",
+  "hotspot": "base-camp",
+  "chapter": 2,
+  "title": "Base Camp",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ {
+  "id": "concordia",
+  "hotspot": "concordia",
+  "chapter": 1,
+  "title": "Concordia",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ {
+  "id": "broad-peak",
+  "hotspot": "broad-peak",
+  "chapter": 1,
+  "title": "Broad Peak",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ },
+ {
+  "id": "gilkey-memorial",
+  "hotspot": "gilkey-memorial",
+  "chapter": 2,
+  "title": "Gilkey Memorial",
+  "body": "Placeholder \u2014 researched in Debrief 4.",
+  "source_title": null,
+  "source_url": null,
+  "verified_on": null
+ }
+]

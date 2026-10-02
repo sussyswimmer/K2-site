@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>K2 — The Savage Mountain · an interactive 3D journey</title>
+  <meta name="description" content="Fly up K2, the world's second-highest mountain (8,611 m), in a scroll-driven 3D model built from real Copernicus elevation data: the Baltoro approach, base camp, the Abruzzi Spur, the Bottleneck and the summit." />
+  <meta name="theme-color" content="#07111f" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://k2-savage-mountain.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="K2 — The Savage Mountain" />
+  <meta property="og:description" content="A scroll-driven 3D journey up the world's second-highest mountain, built from real elevation data." />
+  <meta property="og:image" content="/media/og_card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="K2's summit pyramid at dawn above the Godwin-Austen Glacier" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script>
+    // Decide the render mode before first paint so the static layout never flashes.
+    (function () {
+      var q = new URLSearchParams(location.search), gl = false;
+      try { var c = document.createElement('canvas'); gl = !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) {}
+      var reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var mode = (!gl || q.has('nowebgl') || q.has('static')) ? 'static nowebgl' : (reduced || q.has('reduced')) ? 'static reduced' : 'webgl';
+      document.documentElement.className = 'js ' + mode.split(' ').map(function (m) { return 'mode-' + m; }).join(' ');
+      if (mode === 'webgl') {
+        var l = document.createElement('link');
+        l.rel = 'preload'; l.as = 'image'; l.href = '/media/flythrough_intro_poster.webp'; l.setAttribute('fetchpriority', 'high');
+        document.head.appendChild(l);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#ch-1">Skip to the story</a>
+
+  <!-- ===== 3D layer (WebGL mode only) ===== -->
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div id="labels" aria-hidden="false"></div>
+  <video id="intro-video" class="intro-video" muted playsinline preload="none" poster="/media/flythrough_intro_poster.webp" aria-hidden="true">
+    <source src="/media/flythrough_intro.webm" type="video/webm" />
+    <source src="/media/flythrough_intro.mp4" type="video/mp4" />
+  </video>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===== Loader ===== -->
+  <div id="loader" class="loader" role="status" aria-live="polite">
+    <div class="loader__inner">
+      <p class="loader__eyebrow">Building the mountain from elevation data</p>
+      <p class="loader__count"><span id="loader-count">0</span><span class="loader__unit"> m</span></p>
+      <div class="loader__bar"><span id="loader-bar"></span></div>
+      <p class="loader__note" id="loader-note">Loading terrain…</p>
+    </div>
+  </div>
+
+  <!-- ===== HUD ===== -->
+  <header class="hud" id="hud">
+    <a class="hud__mark" href="#top" aria-label="K2 — back to the top">
+      <svg viewBox="0 0 64 40" aria-hidden="true"><path d="M2 38 L20 14 L26 21 L36 2 L62 38 Z" /></svg>
+      <span>K2</span>
+    </a>
+    <nav class="hud__chapters" aria-label="Chapters">
+      <ol>
+        <li><a href="#ch-0" data-jump="0" aria-label="Intro"><span class="dot"></span><span class="tip">Intro</span></a></li>
+        <li><a href="#ch-1" data-jump="1" aria-label="Chapter 1: The Approach"><span class="dot"></span><span class="tip">The Approach</span></a></li>
+        <li><a href="#ch-2" data-jump="2" aria-label="Chapter 2: Base Camp"><span class="dot"></span><span class="tip">Base Camp</span></a></li>
+        <li><a href="#ch-3" data-jump="3" aria-label="Chapter 3: The Climb"><span class="dot"></span><span class="tip">The Climb</span></a></li>
+        <li><a href="#ch-4" data-jump="4" aria-label="Chapter 4: The Bottleneck"><span class="dot"></span><span class="tip">The Bottleneck</span></a></li>
+        <li><a href="#ch-5" data-jump="5" aria-label="Chapter 5: Summit"><span class="dot"></span><span class="tip">Summit</span></a></li>
+      </ol>
+    </nav>
+    <div class="hud__tools">
+      <div class="units-toggle" role="group" aria-label="Units">
+        <button type="button" data-units="m" aria-pressed="true">m</button>
+        <button type="button" data-units="ft" aria-pressed="false">ft</button>
+      </div>
+      <button type="button" class="icon-btn" id="sound-toggle" aria-pressed="false" aria-label="Sound off. Turn ambient sound on">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M4 9h4l5-4v14l-5-4H4z"/><path class="wave" d="M16 9c1.5 1.6 1.5 4.4 0 6M18.5 6.5c3 3 3 8 0 11"/><path class="mute" d="M16 9l5 6M21 9l-5 6"/></svg>
+      </button>
+      <button type="button" class="btn btn--ghost webgl-only" id="explore-toggle" aria-pressed="false">Explore freely</button>
+    </div>
+  </header>
+
+  <!-- ===== Altitude meter ===== -->
+  <aside class="altimeter webgl-only" id="altimeter" aria-label="Camera altitude">
+    <div class="altimeter__scale" aria-hidden="true">
+      <span class="altimeter__track"></span>
+      <ol class="altimeter__ticks"></ol>
+      <span class="altimeter__marker" id="alt-marker"><span class="altimeter__arrow"></span></span>
+    </div>
+    <p class="altimeter__readout" aria-live="off">
+      <span class="altimeter__primary" id="alt-primary">—</span>
+      <span class="altimeter__secondary" id="alt-secondary">—</span>
+    </p>
+  </aside>
+
+  <!-- ===== Explore mode toolbar ===== -->
+  <div class="explore-bar webgl-only" id="explore-bar" hidden>
+    <p class="explore-bar__hint">Drag to orbit · scroll or pinch to zoom · right-drag to pan</p>
+    <div class="explore-bar__toggles" role="group" aria-label="Layers">
+      <button type="button" class="chip" data-layer="routes" aria-pressed="true">Routes</button>
+      <button type="button" class="chip" data-layer="contours" aria-pressed="false">Contours</button>
+      <button type="button" class="chip" data-layer="labels" aria-pressed="true">Labels</button>
+      <button type="button" class="chip" data-layer="section" aria-pressed="false">Cross-section</button>
+      <button type="button" class="chip" data-layer="plinth" aria-pressed="false">Terrain slab</button>
+    </div>
+    <button type="button" class="btn btn--amber" id="explore-exit">Back to the story</button>
+  </div>
+
+  <!-- ===== Story ===== -->
+  <main id="top">
+    <div class="story" id="story">
+
+      <section class="chapter chapter--intro" id="ch-0" data-chapter="0" aria-labelledby="ch-0-title"
+        data-photo="/media/hero_k2_dawn" data-still="/media/stills/still_00">
+        <div class="chapter__media" aria-hidden="true"></div>
+        <div class="card card--intro">
+          <p class="eyebrow">Karakoram · <span class="nowrap">35.88° N, 76.51° E</span></p>
+          <h1 id="ch-0-title" class="display">K2<span class="display__sub">The Savage Mountain</span></h1>
+          <p class="lede">At <strong data-m="8611">8,611 m</strong>, K2 is the second-highest mountain on Earth and, by most climbers' reckoning, the hardest of the fourteen 8,000-metre peaks. Scroll to fly from the Baltoro Glacier to its summit, over a model built from real elevation data.</p>
+          <div class="card__actions">
+            <a class="btn btn--amber" href="#ch-1" data-jump="1">Begin the approach <span aria-hidden="true">↓</span></a>
+            <button type="button" class="btn btn--ghost webgl-only" data-action="explore">Explore freely</button>
+          </div>
+        </div>
+        <p class="scroll-cue webgl-only" aria-hidden="true"><span>Scroll</span></p>
+      </section>
+
+      <section class="chapter" id="ch-1" data-chapter="1" aria-labelledby="ch-1-title"
+        data-photo="/media/chapter_baltoro" data-still="/media/stills/still_01">
+        <div class="chapter__media" aria-hidden="true"></div>
+        <div class="card card--left">
+          <p class="eyebrow"><span class="eyebrow__num">01</span> The Approach</p>
+          <h2 id="ch-1-title">There is no road to K2</h2>
+          <p>K2 rises on the border between Gilgit-Baltistan in Pakistan and Xinjiang in China, deep in the Karakoram. From the Pakistani side, expeditions fly or drive to Skardu, take jeeps to the village of Askole, then walk for about a week up the Baltoro Glacier, a river of ice and rubble more than <span data-m="60000" data-unit="km">60 km</span> long.</p>
+          <p>At <strong>Concordia</strong>, where the Baltoro meets the Godwin-Austen Glacier at about <span data-m="4600">4,600 m</span>, the mountain finally comes into view: a near-perfect pyramid at the head of the valley.</p>
+          <dl class="stats">
+            <div><dt>Summit</dt><dd data-m="8611">8,611 m</dd></div>
+            <div><dt>Concordia</dt><dd data-m="4600">4,600 m</dd></div>
+            <div><dt>Trek in</dt><dd>~7 days</dd></div>
+          </dl>
+          <div class="card__actions">
+            <button type="button" class="btn btn--ghost" data-widget="packer">Pack for the expedition</button>
+          </div>
+        </div>
+        <div class="widget-inline" data-mount="packer"></div>
+      </section>
+
+      <section class="chapter" id="ch-2" data-chapter="2" aria-labelledby="ch-2-title"
+        data-photo="/media/chapter_basecamp" data-still="/media/stills/still_02">
+        <div class="chapter__media" aria-hidden="true"></div>
+        <div class="card card--right">
+          <p class="eyebrow"><span class="eyebrow__num">02</span> Base Camp · <span data-m="5000">5,000 m</span></p>
+          <h2 id="ch-2-title">A mountain named by a surveyor's notebook</h2>
+          <p>In 1856 the Great Trigonometrical Survey of India sighted the high Karakoram from more than 200 km away. Surveyor T. G. Montgomerie labelled the peaks K1, K2, K3 and so on, for <em>Karakoram</em>. The others later took local names; the second peak kept its number. It has also been called Chhogori and Mount Godwin-Austen.</p>
+          <p>On <strong>31 July 1954</strong> Lino Lacedelli and Achille Compagnoni of Ardito Desio's Italian expedition reached the top. Below them, Walter Bonatti and the Hunza porter Amir Mahdi, who had carried up the summit pair's oxygen, were forced to spend the night in the open at about <span data-m="8100">8,100 m</span>. Mahdi lost his toes to frostbite. The account of that night was disputed for half a century.</p>
+          <div class="card__actions">
+            <button type="button" class="btn btn--ghost" data-widget="timeline">Open the timeline</button>
+          </div>
+        </div>
+        <div class="widget-inline" data-mount="timeline"></div>
+      </section>
+
+      <section class="chapter" id="ch-3" data-chapter="3" aria-labelledby="ch-3-title"
+        data-photo="/media/stills/still_03" data-still="/media/stills/still_03">
+        <div class="chapter__media" aria-hidden="true"></div>
+        <div class="card card--left">
+          <p class="eyebrow"><span class="eyebrow__num">03</span> The Climb</p>
+          <h2 id="ch-3-title">Up the Abruzzi Spur</h2>
+          <p>Most ascents follow the Abruzzi Spur, the south-east ridge first tried by the Duke of the Abruzzi's expedition in 1909. Fixed ropes link four camps: past House's Chimney near Camp 2 and the Black Pyramid above it, onto the broad Shoulder at about <span data-m="7900">7,900 m</span>.</p>
+          <p>The amber line is the Abruzzi; the cyan line is the Cesen route, which climbs the next spur to the west and joins it at the Shoulder.</p>
+          <ol class="camp-list" aria-label="Approximate camp elevations on the Abruzzi Spur">
+            <li><span>Base Camp</span><span data-m="5000">5,000 m</span></li>
+            <li><span>Camp 1</span><span data-m="6050">6,050 m</span></li>
+            <li><span>Camp 2</span><span data-m="6700">6,700 m</span></li>
+            <li><span>Camp 3</span><span data-m="7200">7,200 m</span></li>
+            <li><span>Camp 4</span><span data-m="7900">7,900 m</span></li>
+          </ol>
+          <p class="fineprint">Camp elevations are approximate and shift from season to season.</p>
+          <div class="card__actions">
+            <button type="button" class="btn btn--ghost" data-widget="routes">Compare the routes</button>
+          </div>
+        </div>
+        <div class="widget-inline" data-mount="routes"></div>
+      </section>
+
+      <section class="chapter chapter--danger" id="ch-4" data-chapter="4" aria-labelledby="ch-4-title"
+        data-photo="/media/chapter_bottleneck" data-still="/media/stills/still_04">
+        <div class="chapter__media" aria-hidden="true"></div>
+        <div class="card card--right">
+          <p class="eyebrow"><span class="eyebrow__num">04</span> The Bottleneck · <span data-m="8200">8,200 m</span></p>
+          <h2 id="ch-4-title">Under the serac</h2>
+          <p>Above the Shoulder the route narrows into the Bottleneck, a steep couloir around <span data-m="8200">8,200 m</span>, then traverses left beneath a serac: a cliff of glacier ice that hangs over the route and can break without warning. Climbers usually go through in the dark, hours before dawn.</p>
+          <p>In August 2008 falling ice here swept away fixed ropes and climbers on the descent. Eleven people died within about two days, the worst single disaster in K2's history.</p>
+          <p>Above <span data-m="8000">8,000 m</span>, the "death zone", each breath holds about a third of the oxygen it would at sea level.</p>
+          <div class="card__actions">
+            <button type="button" class="btn btn--ghost" data-widget="oxygen">Breathe at altitude</button>
+            <button type="button" class="btn btn--ghost" data-widget="weather">Find the weather window</button>
+          </div>
+        </div>
+        <div class="widget-inline" data-mount="oxygen"></div>
+        <div class="widget-inline" data-mount="weather"></div>
+      </section>
+
+      <section class="chapter" id="ch-5" data-chapter="5" aria-labelledby="ch-5-title"
+        data-photo="/media/chapter_summit" data-still="/media/stills/still_05">
+        <div class="chapter__media" aria-hidden="true"></div>
+        <div class="card card--left">
+          <p class="eyebrow"><span class="eyebrow__num">05</span> Summit · <span data-m="8611">8,611 m</span></p>
+          <h2 id="ch-5-title">The last of the fourteen</h2>
+          <p>For decades K2 was the only one of the fourteen 8,000-metre peaks that had never been climbed in winter. On <strong>16 January 2021</strong>, ten Nepali climbers, among them Nirmal "Nims" Purja and Mingma Gyalje Sherpa ("Mingma G"), regrouped just below the top and walked the last metres together, singing the Nepali national anthem.</p>
+          <p>The summit is a narrow snow ridge. From it, the Karakoram falls away on every side: Broad Peak and the Gasherbrums to the south-east, China's Shaksgam valley to the north.</p>
+          <div class="card__actions">
+            <button type="button" class="btn btn--ghost" data-widget="compare">Everest vs K2</button>
+            <a class="btn btn--amber" href="#quiz">Take the quiz</a>
+          </div>
+        </div>
+        <div class="widget-inline" data-mount="compare"></div>
+      </section>
+    </div>
+
+    <!-- scroll distance for the 3D story (WebGL mode only) -->
+    <div id="scroll-track" class="scroll-track" aria-hidden="true"></div>
+
+    <!-- ===== After the story ===== -->
+    <section class="after" id="quiz" aria-labelledby="quiz-title">
+      <div class="after__inner">
+        <p class="eyebrow">Field test</p>
+        <h2 id="quiz-title">How much of the mountain did you take in?</h2>
+        <div class="widget-inline widget-inline--always" data-mount="quiz"></div>
+      </div>
+    </section>
+
+    <section class="after after--sources" id="sources" aria-labelledby="sources-title">
+      <div class="after__inner">
+        <p class="eyebrow">Sources</p>
+        <h2 id="sources-title">Where the facts come from</h2>
+        <p>Every number on this page is checked against at least one source. Where sources disagree, it says so.</p>
+        <ol class="sources-list" id="sources-list"></ol>
+      </div>
+    </section>
+
+    <footer class="after after--credits" id="credits" aria-labelledby="credits-title">
+      <div class="after__inner">
+        <h2 id="credits-title">Credits</h2>
+        <div class="credits-grid">
+          <div>
+            <h3>Terrain</h3>
+            <p>Built from the Copernicus DEM GLO-30. Produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. Accessed from the <a href="https://registry.opendata.aws/copernicus-dem">AWS Open Data registry</a>. The DEM's highest cell reads 8,571 m, about 40 m below the surveyed 8,611 m: a 30 m radar model softens sharp summits.</p>
+          </div>
+          <div>
+            <h3>Places &amp; routes</h3>
+            <p>Base Camp, Concordia, Camp 1 and other positions © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL). Other camps and route lines are traced on the elevation model and are approximate.</p>
+          </div>
+          <div>
+            <h3>Imagery &amp; props</h3>
+            <p>Photographic images, videos and 3D props were generated with Higgsfield (Nano Banana Pro, Kling 3.0, Tripo H3.1). Reference photos used for the summit shape: Sallahuddin shah (CC BY-SA 4.0) and Molly Tolzmann (CC BY-SA 2.0) via Wikimedia Commons.</p>
+          </div>
+          <div>
+            <h3>Built with</h3>
+            <p>FreeCAD, Blender, three.js, GSAP and Lenis. Ambient sound is synthesised in your browser.</p>
+          </div>
+        </div>
+        <p class="fineprint">Not a climbing guide. Camp positions, routes and conditions are simplified for illustration.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ===== Hotspot side panel ===== -->
+  <aside class="sidepanel" id="sidepanel" role="dialog" aria-modal="false" aria-labelledby="sidepanel-title" hidden>
+    <button type="button" class="icon-btn sidepanel__close" data-close aria-label="Close">×</button>
+    <p class="eyebrow" id="sidepanel-kicker"></p>
+    <h2 id="sidepanel-title"></h2>
+    <div id="sidepanel-body"></div>
+  </aside>
+
+  <!-- ===== Widget drawer (WebGL mode) ===== -->
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+    <div class="drawer__panel">
+      <header class="drawer__head">
+        <h2 id="drawer-title"></h2>
+        <button type="button" class="icon-btn" data-close aria-label="Close">×</button>
+      </header>
+      <div class="drawer__body" id="drawer-body"></div>
+    </div>
+  </div>
+
+  <noscript><p class="noscript">This story is best with JavaScript on, but every chapter above is readable without it.</p></noscript>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
