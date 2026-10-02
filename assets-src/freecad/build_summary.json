@@ -1,0 +1,54 @@
+{
+  "objects": [
+    {
+      "name": "Terrain",
+      "label": "Terrain (Copernicus GLO-30, 512 grid)",
+      "type": "Mesh::Feature"
+    },
+    {
+      "name": "Plinth",
+      "label": "Plinth (floor at 3500 m)",
+      "type": "Mesh::Feature"
+    },
+    {
+      "name": "Plinth_SideContours",
+      "label": "Plinth side contours (500 m)",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Contours",
+      "label": "Contours 5,000\u20138,500 m (500 m)",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Route_Abruzzi",
+      "label": "Abruzzi Spur (SE ridge)",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Route_Cesen",
+      "label": "Cesen route (SSE spur)",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Camps",
+      "label": "Camps (base-camp, abc, camp-1, camp-2, camp-3, camp-4, cesen-c1, cesen-c2, cesen-c3)",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Summit_Flag",
+      "label": "Summit flag (marker scale)",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Section_Slab",
+      "label": "Section through summit along SE ridge (NW\u2013SE)",
+      "type": "Part::Feature"
+    }
+  ],
+  "plinth_floor_m": 3500.0,
+  "route_radius_m": 12.0,
+  "route_lift_m": 25.0,
+  "marker_scale": 8.0,
+  "units": "1 FreeCAD unit = 1 metre"
+}

@@ -1,0 +1,29 @@
+# deps / build
+node_modules/
+dist/
+.vite/
+test-results/
+playwright-report/
+lighthouse/
+*.log
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# raw / regenerable terrain intermediates (rebuild with npm run build:terrain)
+assets-src/dem/raw_*.tif
+assets-src/dem/*.xyz
+assets-src/dem/k2_heightfield_*.obj
+assets-src/dem/*.npy
+assets-src/blender/tmp/
+assets-src/blender/*.glb
+assets-src/renders/frames/
+*.blend1
+*.FCBak
+*.FCStd1
+
+# OS
+.DS_Store
+assets-src/freecad/exports/terrain*.obj

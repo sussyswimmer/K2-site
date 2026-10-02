@@ -1,0 +1,40 @@
+{
+  "project": "K2 Savage Mountain",
+  "style_key": "Cinematic, high-altitude photography look. Cold palette: deep navy shadows, ice-blue snow, warm amber first light on the summit. Thin cirrus clouds, spindrift blowing off ridges, crisp thin air, no people's faces visible, no text, no logos, no watermarks. Shot as if on a medium-format camera with a long lens. Karakoram range, Pakistan.",
+  "references": [
+    "assets-src/reference/K2_from_Concordia_-_3.jpg (CC BY-SA 4.0, Sallahuddin shah)",
+    "assets-src/reference/K2_View_from_Concordia.jpg (CC BY-SA 4.0, Sallahuddin shah)",
+    "assets-src/reference/Concordia_to_K2_Base_Camp.jpg (CC BY-SA 2.0, Molly Tolzmann)"
+  ],
+  "images": [
+    {"file": "hero_k2_dawn.webp", "model": "nano_banana_pro", "aspect_ratio": "16:9", "resolution": "2k", "refs": true, "upscale": true,
+     "prompt": "K2 seen from Concordia at dawn: the steep symmetrical summit pyramid catching amber alpenglow while the lower mountain is still in deep blue shadow; the broad Godwin-Austen Glacier in the foreground with dark medial moraine stripes leading the eye to the peak."},
+    {"file": "chapter_baltoro.webp", "model": "nano_banana_pro", "aspect_ratio": "16:9", "resolution": "2k", "refs": false,
+     "prompt": "The Baltoro Glacier trek: a vast river of ice with long parallel moraine stripes, a thin porters' trail tracing along the debris, sheer granite towers and spires rising on both sides in the distance, late afternoon light."},
+    {"file": "chapter_basecamp.webp", "model": "nano_banana_pro", "aspect_ratio": "16:9", "resolution": "2k", "refs": true,
+     "prompt": "K2 base camp at dusk: a cluster of small orange and yellow expedition dome tents on rocky glacier ice around 5,000 m, strings of prayer flags, K2 towering enormous above the camp with the last light on its summit."},
+    {"file": "chapter_bottleneck.webp", "model": "nano_banana_pro", "aspect_ratio": "16:9", "resolution": "2k", "refs": false,
+     "prompt": "Night in a narrow, steep snow couloir at 8,200 m beneath a huge overhanging ice cliff (serac) glowing faintly blue; a line of tiny climber silhouettes with headlamps, seen from behind and far away, extreme exposure, stars above."},
+    {"file": "chapter_summit.webp", "model": "nano_banana_pro", "aspect_ratio": "16:9", "resolution": "2k", "refs": false, "upscale": true,
+     "prompt": "View from a corniced summit ridge at sunrise over an endless sea of jagged Karakoram peaks and low clouds, the horizon curving, the ridge snow lit amber, deep blue sky overhead."},
+    {"file": "chapter_winter.webp", "model": "nano_banana_pro", "aspect_ratio": "16:9", "resolution": "2k", "refs": true,
+     "prompt": "K2 in brutal winter: a storm wrapping the mountain, a long jet-stream snow plume tearing off the summit pyramid, deep blue twilight, wind-scoured ice."},
+    {"file": "mobile_hero.webp", "model": "nano_banana_pro", "aspect_ratio": "9:16", "resolution": "2k", "refs": true,
+     "prompt": "Portrait framing of K2 from the Godwin-Austen Glacier at dawn: the summit pyramid in amber alpenglow high in the frame, the glacier and moraine stripes leading up from the bottom."},
+    {"file": "og_card.webp", "model": null, "note": "1200x630 crop of hero_k2_dawn — no generation"}
+  ],
+  "videos": [
+    {"file": "flythrough_intro", "model": "kling3_0", "mode": "pro", "sound": "off", "duration": 10, "start_frame": "hero_k2_dawn",
+     "prompt": "Slow cinematic aerial drone shot: the camera rises from low over the Baltoro Glacier, banks gently past the Concordia glacier junction and reveals K2 ahead, steady motion, no cuts."},
+    {"file": "summit_wind_loop", "model": "kling3_0", "mode": "pro", "sound": "off", "duration": 5, "start_frame": "chapter_summit",
+     "prompt": "Locked-off shot: spindrift snow blowing steadily off a summit ridge in strong wind, clouds drifting below, seamless looping motion, camera does not move."},
+    {"file": "storm_loop", "model": "kling3_0", "mode": "pro", "sound": "off", "duration": 5, "start_frame": "chapter_winter",
+     "prompt": "Locked-off shot: storm clouds wrapping and streaming around the summit pyramid, snow plume streaming, seamless looping motion, camera does not move."}
+  ],
+  "props_3d": [
+    {"file": "prop_tent.glb", "source_image_prompt": "A single orange expedition dome tent, three-quarter view, isolated on a plain light grey background, product photo, even soft light"},
+    {"file": "prop_oxygen_bottle.glb", "source_image_prompt": "A mountaineering oxygen cylinder with regulator and hose, orange cylinder, isolated on a plain light grey background, product photo"},
+    {"file": "prop_ice_axe.glb", "source_image_prompt": "A modern mountaineering ice axe, curved shaft, steel pick and adze, isolated on a plain light grey background, product photo"},
+    {"file": "prop_flag.glb", "source_image_prompt": "A small plain amber summit flag on a thin aluminium pole, isolated on a plain light grey background, product photo, no text or emblem"}
+  ]
+}

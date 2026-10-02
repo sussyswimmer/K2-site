@@ -1,0 +1,89 @@
+{
+ "frame": "three.js Y-up metres: x east, y elevation, z south; origin = K2 DEM summit",
+ "cameras": [
+  {
+   "name": "CAM_00_Space",
+   "look_name": "LOOK_00",
+   "pos_yup": [
+    -30000,
+    23000,
+    36000
+   ],
+   "look_yup": [
+    -2000,
+    6000,
+    9000
+   ]
+  },
+  {
+   "name": "CAM_01_Concordia",
+   "look_name": "LOOK_01",
+   "pos_yup": [
+    -3200,
+    5450,
+    17600
+   ],
+   "look_yup": [
+    200,
+    7200,
+    1500
+   ]
+  },
+  {
+   "name": "CAM_02_BaseCamp",
+   "look_name": "LOOK_02",
+   "pos_yup": [
+    -900,
+    5300,
+    6600
+   ],
+   "look_yup": [
+    300,
+    7700,
+    800
+   ]
+  },
+  {
+   "name": "CAM_03_AbruzziSpur",
+   "look_name": "LOOK_03",
+   "pos_yup": [
+    4200,
+    6800,
+    3300
+   ],
+   "look_yup": [
+    1500,
+    6900,
+    900
+   ]
+  },
+  {
+   "name": "CAM_04_Bottleneck",
+   "look_name": "LOOK_04",
+   "pos_yup": [
+    1700,
+    8150,
+    1300
+   ],
+   "look_yup": [
+    420,
+    8240,
+    40
+   ]
+  },
+  {
+   "name": "CAM_05_Summit",
+   "look_name": "LOOK_05",
+   "pos_yup": [
+    -1600,
+    9150,
+    2600
+   ],
+   "look_yup": [
+    0,
+    8450,
+    0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+  "texture": "k2_core_albedo.webp",
+  "texel_m": 4.5,
+  "frame": "three.js Y-up metres (x east, z south)",
+  "x0": -4000.0,
+  "x1": 5216.0,
+  "z0": -3000.0,
+  "z1": 6216.0,
+  "uv": "u = (x - x0) / (x1 - x0); v = 1 - (z - z0) / (z1 - z0)  (flipY = false: row 0 = north = z0)",
+  "feather_m": 600
+}
