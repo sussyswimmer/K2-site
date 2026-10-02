@@ -178,13 +178,13 @@
    "used_for": "Month-by-month summit temperature and wind speed (and ±1 SD wind range), digitised from Fig. 2 ERA5 day-of-year climatology (1979–2021) interpolated to K2's summit; winter 2020/21 extremes; 16 Jan 2021 ridge."
   },
   {
-   "title": "Szymczak et al. (2021), 'Comparison of Environmental Conditions on Summits of Mount Everest and K2 in Climbing and Midwinter Seasons', IJERPH 18:3040",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8000062/",
+   "title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+   "url": "https://www.mdpi.com/1660-4601/18/6/3040",
    "used_for": "Cross-check of ERA5 summit means: July −21 ± 1 °C / 15 ± 3 m/s; January and February −45 °C / 27 ± 4 m/s; summit pressure 325–347 hPa; jet-stream explanation (weakens and shifts north in summer)."
   },
   {
-   "title": "Szymczak et al. (2021), 'Death Zone Weather Extremes Mountaineers Have Experienced in Successful Ascents', Frontiers in Physiology",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8287323/",
+   "title": "Szymczak et al., Death Zone Weather Extremes Mountaineers Have Experienced in Successful Ascents (Frontiers in Physiology, 2021)",
+   "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.696335/full",
    "used_for": "K2 climbing season in July and August; summit-day conditions averaging −19 °C and 12 ± 5 m/s; 16 Jan 2021 winter summit at about −40 °C and 5 m/s."
   },
   {

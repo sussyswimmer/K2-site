@@ -1,0 +1,384 @@
+{
+ "as_of": "2026-10-02",
+ "rows": [
+  {
+   "key": "height",
+   "label": "Height",
+   "everest": 8848.86,
+   "k2": 8611,
+   "unit": "m",
+   "estimate": false,
+   "note": "Everest: 2020 China-Nepal survey. K2: Britannica.",
+   "source_title": "K2 (Encyclopaedia Britannica)",
+   "source_url": "https://www.britannica.com/place/K2",
+   "everest_source_title": "Mount Everest (Encyclopaedia Britannica)",
+   "everest_source_url": "https://www.britannica.com/place/Mount-Everest",
+   "k2_source_title": "K2 (Encyclopaedia Britannica)",
+   "k2_source_url": "https://www.britannica.com/place/K2"
+  },
+  {
+   "key": "first_ascent",
+   "label": "First ascent",
+   "everest": 1953,
+   "k2": 1954,
+   "unit": "year",
+   "estimate": false,
+   "note": "Hillary and Tenzing, 1953; Compagnoni and Lacedelli, 31 July 1954.",
+   "source_title": "K2 (Encyclopaedia Britannica)",
+   "source_url": "https://www.britannica.com/place/K2",
+   "everest_source_title": "Mount Everest (Encyclopaedia Britannica)",
+   "everest_source_url": "https://www.britannica.com/place/Mount-Everest",
+   "k2_source_title": "K2 (Encyclopaedia Britannica)",
+   "k2_source_url": "https://www.britannica.com/place/K2"
+  },
+  {
+   "key": "winter_first_ascent",
+   "label": "First winter ascent",
+   "everest": 1980,
+   "k2": 2021,
+   "unit": "year",
+   "estimate": false,
+   "note": "Everest: Cichy and Wielicki, 17 Feb 1980. K2: ten Nepali climbers, 16 Jan 2021, the last 8,000er climbed in winter.",
+   "source_title": "F. Wilkinson, Nepali Mountaineers Achieve Historic Winter First on K2 (National Geographic, Jan 2021)",
+   "source_url": "https://www.nationalgeographic.com/adventure/article/nims-purja-attempts-to-summit-k2-the-worlds-second-highest-peak",
+   "everest_source_title": "The Climbing History of Winter Everest (ExplorersWeb)",
+   "everest_source_url": "https://explorersweb.com/the-climbing-history-of-winter-everest/",
+   "k2_source_title": "F. Wilkinson, Nepali Mountaineers Achieve Historic Winter First on K2 (National Geographic, Jan 2021)",
+   "k2_source_url": "https://www.nationalgeographic.com/adventure/article/nims-purja-attempts-to-summit-k2-the-worlds-second-highest-peak"
+  },
+  {
+   "key": "total_summits",
+   "label": "Total summits (end of 2025)",
+   "everest": 13737,
+   "k2": [
+    905,
+    935
+   ],
+   "unit": "summits",
+   "estimate": true,
+   "note": "Everest: Himalayan Database via Alan Arnette, through Dec 2025 (7,563 different people). K2 has no equivalent database; our range adds season counts from ExplorersWeb and Arnette to Arnette's 516 through spring 2022. No one summited K2 in 2026.",
+   "source_title": "A. Arnette, K2 2022 Summer Coverage: How Hard is K2? (alanarnette.com, June 2022)",
+   "source_url": "https://www.alanarnette.com/2022/06/20/k2-2022-summer-coverage-how-hard-is-k2/",
+   "everest_source_title": "A. Arnette, Everest by the Numbers: 2026 Edition (alanarnette.com, Himalayan Database data)",
+   "everest_source_url": "https://www.alanarnette.com/2026/01/26/everest-by-the-numbers-2026-edition/",
+   "k2_source_title": "A. Arnette, K2 2022 Summer Coverage: How Hard is K2? (alanarnette.com, June 2022)",
+   "k2_source_url": "https://www.alanarnette.com/2022/06/20/k2-2022-summer-coverage-how-hard-is-k2/"
+  },
+  {
+   "key": "total_deaths",
+   "label": "Total deaths (end of 2025)",
+   "everest": 339,
+   "k2": [
+    100,
+    103
+   ],
+   "unit": "deaths",
+   "estimate": true,
+   "note": "Everest: Himalayan Database via Alan Arnette, 1921 to end of 2025. K2: 93 through spring 2022 (Arnette) plus later reported deaths; other tallies differ by a few.",
+   "source_title": "A. Arnette, K2 2022 Summer Coverage: How Hard is K2? (alanarnette.com, June 2022)",
+   "source_url": "https://www.alanarnette.com/2022/06/20/k2-2022-summer-coverage-how-hard-is-k2/",
+   "everest_source_title": "A. Arnette, Everest by the Numbers: 2026 Edition (alanarnette.com, Himalayan Database data)",
+   "everest_source_url": "https://www.alanarnette.com/2026/01/26/everest-by-the-numbers-2026-edition/",
+   "k2_source_title": "A. Arnette, K2 2022 Summer Coverage: How Hard is K2? (alanarnette.com, June 2022)",
+   "k2_source_url": "https://www.alanarnette.com/2022/06/20/k2-2022-summer-coverage-how-hard-is-k2/"
+  },
+  {
+   "key": "deaths_per_100",
+   "label": "Deaths per 100 summits",
+   "everest": 2.5,
+   "k2": [
+    10.7,
+    11.4
+   ],
+   "unit": "per 100 summits",
+   "estimate": true,
+   "note": "Computed from the two rows above. K2 was about 23 per 100 for 1954-2007 (National Geographic, 2008).",
+   "source_title": "Is K2 the New Everest? (National Geographic, Sept 2008)",
+   "source_url": "https://www.nationalgeographic.com/adventure/article/is-k2-the-new-everest",
+   "everest_source_title": "A. Arnette, Everest by the Numbers: 2026 Edition (alanarnette.com, Himalayan Database data)",
+   "everest_source_url": "https://www.alanarnette.com/2026/01/26/everest-by-the-numbers-2026-edition/",
+   "k2_source_title": "Is K2 the New Everest? (National Geographic, Sept 2008)",
+   "k2_source_url": "https://www.nationalgeographic.com/adventure/article/is-k2-the-new-everest"
+  },
+  {
+   "key": "latitude",
+   "label": "Latitude",
+   "everest": 27.98,
+   "k2": 35.88,
+   "unit": "deg N",
+   "estimate": false,
+   "note": "27°59′N and 35°52′N. K2's higher latitude makes its winter air thinner relative to summer.",
+   "source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+   "source_url": "https://www.mdpi.com/1660-4601/18/6/3040",
+   "everest_source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+   "everest_source_url": "https://www.mdpi.com/1660-4601/18/6/3040",
+   "k2_source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+   "k2_source_url": "https://www.mdpi.com/1660-4601/18/6/3040"
+  },
+  {
+   "key": "summit_pressure_season",
+   "label": "Summit air pressure, climbing season",
+   "everest": 333,
+   "k2": 347,
+   "unit": "hPa",
+   "estimate": false,
+   "note": "Mean for May (Everest) and July (K2), 1979-2019 ERA5 data. Sea level is about 1,013 hPa.",
+   "source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+   "source_url": "https://www.mdpi.com/1660-4601/18/6/3040",
+   "everest_source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+   "everest_source_url": "https://www.mdpi.com/1660-4601/18/6/3040",
+   "k2_source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+   "k2_source_url": "https://www.mdpi.com/1660-4601/18/6/3040"
+  },
+  {
+   "key": "summit_pressure_winter",
+   "label": "Summit air pressure, midwinter",
+   "everest": 324,
+   "k2": 326,
+   "unit": "hPa",
+   "estimate": false,
+   "note": "Mean for January-February. In winter K2's latitude almost cancels its lower height.",
+   "source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+   "source_url": "https://www.mdpi.com/1660-4601/18/6/3040",
+   "everest_source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+   "everest_source_url": "https://www.mdpi.com/1660-4601/18/6/3040",
+   "k2_source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+   "k2_source_url": "https://www.mdpi.com/1660-4601/18/6/3040"
+  },
+  {
+   "key": "expedition_days",
+   "label": "Typical expedition length",
+   "everest": [
+    42,
+    51
+   ],
+   "k2": [
+    42,
+    51
+   ],
+   "unit": "days",
+   "estimate": true,
+   "note": "Operator itineraries: Everest 42 (Madison) to 51 days (Alpine Ascents); K2 42 (Madison), 47 (Elite Exped) to 51 days (Furtenbach).",
+   "source_title": "K2 expedition page (Madison Mountaineering; operator)",
+   "source_url": "https://madisonmountaineering.com/expedition/k2/",
+   "everest_source_title": "Mount Everest expeditions (Alpine Ascents International; operator)",
+   "everest_source_url": "https://www.alpineascents.com/climbs/mount-everest/",
+   "k2_source_title": "K2 8000m Summit Expedition (Furtenbach Adventures; operator)",
+   "k2_source_url": "https://www.furtenbachadventures.com/en/trips/k2/"
+  },
+  {
+   "key": "cost",
+   "label": "Typical guided cost per climber",
+   "everest": [
+    45000,
+    95000
+   ],
+   "k2": [
+    30000,
+    85000
+   ],
+   "unit": "USD",
+   "estimate": true,
+   "note": "Everest: about $45k with Nepali operators to $80k-95k with Western ones (Arnette, 2026). K2: Outside cited an average near $30k in 2022; 2027 prices run $60k-85k (Elite Exped) and $75.5k (Madison).",
+   "source_title": "How Much Does It Cost to Climb K2? (Elite Exped; operator)",
+   "source_url": "https://www.eliteexped.com/how-much-it-costs-to-climb-k2",
+   "everest_source_title": "A. Arnette, Everest by the Numbers: 2026 Edition (alanarnette.com, Himalayan Database data)",
+   "everest_source_url": "https://www.alanarnette.com/2026/01/26/everest-by-the-numbers-2026-edition/",
+   "k2_source_title": "How Much Does It Cost to Climb K2? (Elite Exped; operator)",
+   "k2_source_url": "https://www.eliteexped.com/how-much-it-costs-to-climb-k2"
+  }
+ ],
+ "profiles": {
+  "everest": [
+   [
+    0.0,
+    5364
+   ],
+   [
+    1.0,
+    5500
+   ],
+   [
+    2.0,
+    5900
+   ],
+   [
+    2.8,
+    6065
+   ],
+   [
+    4.2,
+    6250
+   ],
+   [
+    5.6,
+    6400
+   ],
+   [
+    6.6,
+    6800
+   ],
+   [
+    7.2,
+    7160
+   ],
+   [
+    7.9,
+    7600
+   ],
+   [
+    8.4,
+    7906
+   ],
+   [
+    8.8,
+    8400
+   ],
+   [
+    9.1,
+    8749
+   ],
+   [
+    9.4,
+    8849
+   ],
+   [
+    9.9,
+    8300
+   ],
+   [
+    10.6,
+    7600
+   ],
+   [
+    11.4,
+    6800
+   ],
+   [
+    12.4,
+    6000
+   ],
+   [
+    13.8,
+    5600
+   ],
+   [
+    15.5,
+    5400
+   ],
+   [
+    17.0,
+    5250
+   ]
+  ],
+  "k2": [
+   [
+    0.0,
+    5000
+   ],
+   [
+    1.0,
+    5100
+   ],
+   [
+    2.0,
+    5300
+   ],
+   [
+    2.6,
+    5700
+   ],
+   [
+    3.0,
+    6050
+   ],
+   [
+    3.6,
+    6450
+   ],
+   [
+    4.0,
+    6700
+   ],
+   [
+    4.5,
+    7000
+   ],
+   [
+    4.9,
+    7200
+   ],
+   [
+    5.4,
+    7600
+   ],
+   [
+    5.9,
+    7900
+   ],
+   [
+    6.4,
+    8200
+   ],
+   [
+    6.8,
+    8450
+   ],
+   [
+    7.2,
+    8611
+   ],
+   [
+    7.7,
+    8200
+   ],
+   [
+    8.3,
+    7600
+   ],
+   [
+    9.0,
+    6800
+   ],
+   [
+    9.8,
+    6000
+   ],
+   [
+    10.8,
+    5300
+   ],
+   [
+    12.0,
+    4800
+   ],
+   [
+    13.5,
+    4600
+   ]
+  ]
+ },
+ "profiles_note": "Approximate silhouettes, not survey cross-sections. Each is hand-built from published heights of camps and landmarks along the standard route on the south side (Khumbu and South Col for Everest; Godwin-Austen Glacier and Abruzzi Spur for K2), continued down the north face to the glacier below. Horizontal spacing is estimated from maps and may be off by a kilometre or more.",
+ "profiles_sources": [
+  {
+   "title": "Mount Everest (Encyclopaedia Britannica)",
+   "url": "https://www.britannica.com/place/Mount-Everest"
+  },
+  {
+   "title": "K2 (Encyclopaedia Britannica)",
+   "url": "https://www.britannica.com/place/K2"
+  },
+  {
+   "title": "A. Arnette, K2 Winter on the Abruzzi (alanarnette.com, 2020)",
+   "url": "https://www.alanarnette.com/blog/2020/12/23/k2-winter-on-the-abruzzi/"
+  },
+  {
+   "title": "K2 advanced base camp dispatches, 2023-2025 (Madison Mountaineering; operator)",
+   "url": "https://madisonmountaineering.com/tag/k2-advanced-base-camp/"
+  },
+  {
+   "title": "Wendleder et al., Velocity variations and hydrological drainage at Baltoro Glacier, Pakistan (The Cryosphere, 2024)",
+   "url": "https://tc.copernicus.org/articles/18/1085/2024/"
+  }
+ ]
+}

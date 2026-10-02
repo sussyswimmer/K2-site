@@ -35,16 +35,26 @@ function silhouette(profiles) {
   </svg>`;
 }
 
+// Years and latitudes are labels, not quantities: no thousands separator, no bars.
+const PLAIN = new Set(['year', 'deg N']);
+
 function valueText(row, v) {
   if (v == null) return '—';
   if (typeof v === 'string') return v;
+  if (row.unit === 'year') return String(v);
   if (row.unit === 'm') return fmtAlt(v);
   if (row.unit === 'USD') return `$${nf.format(v / 1000)}k`;
   if (row.unit === 'deg N') return `${nf.format(v)}° N`;
   return `${nf.format(v)}${row.unit ? ` ${row.unit}` : ''}`;
 }
 const num = (v) => (Array.isArray(v) ? (v[0] + v[1]) / 2 : typeof v === 'number' ? v : null);
-const show = (row, v) => (Array.isArray(v) ? `${valueText(row, v[0])}–${valueText(row, v[1]).replace('$', '')}` : valueText(row, v));
+// Ranges carry the unit once: "905–935 summits", "$45k–95k", "7,600–8,000 m".
+function show(row, v) {
+  if (!Array.isArray(v)) return valueText(row, v);
+  const [a, b] = v.map((x) => valueText(row, x));
+  const unit = /^\$/.test(a) ? '' : (b.match(/[^\d.,\s].*$/) || [''])[0];
+  return `${unit ? a.slice(0, a.length - unit.length).trim() : a}–${b.replace(/^\$/, '')}`;
+}
 
 export async function mount(el) {
   const data = await getCompare();
@@ -52,21 +62,23 @@ export async function mount(el) {
     const rows = data.rows.filter((r) => num(r.everest) != null || num(r.k2) != null);
     el.innerHTML = `
     <div class="w">
-      <p class="lede-sm">Everest is ${esc(fmtAlt(Math.round(num(rows.find((r) => r.key === 'height')?.everest) - num(rows.find((r) => r.key === 'height')?.k2))))} higher. K2 is the harder climb: steeper, further north, colder and much less visited.</p>
+      <p class="lede-sm">Everest is ${esc(fmtAlt(Math.round(num(rows.find((r) => r.key === 'height')?.everest) - num(rows.find((r) => r.key === 'height')?.k2))))} higher, but K2 is widely seen as the harder climb: steeper, further north, far less visited and far deadlier for each summit.</p>
       <div class="w-panel">${silhouette(data.profiles)}</div>
       ${data.profiles_note ? `<p class="w-note">${esc(data.profiles_note)}</p>` : ''}
       <div class="vs-rows">
         ${rows.map((r) => {
           const e = num(r.everest), k = num(r.k2);
-          const max = Math.max(e || 0, k || 0) || 1;
-          const src = r.source_url || r.k2_source_url || r.everest_source_url;
+          const max = PLAIN.has(r.unit) ? Infinity : Math.max(e || 0, k || 0) || 1;
+          const split = r.everest_source_url && r.k2_source_url && r.everest_source_url !== r.k2_source_url;
+          const links = (split ? [['Everest source', r.everest_source_url], ['K2 source', r.k2_source_url]] : [['source', r.source_url || r.k2_source_url || r.everest_source_url]])
+            .filter(([, u]) => u).map(([t, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`).join(' · ');
           return `<div class="vs-row">
             <div class="vs-row__head"><b>${esc(r.label)}</b>${r.estimate ? '<span class="vs-est">estimate</span>' : ''}</div>
-            <div class="vs-bars">
+            <div class="vs-bars${PLAIN.has(r.unit) ? ' vs-bars--plain' : ''}">
               <span>Everest</span><span class="vs-bar vs-bar--everest"><span data-w="${((e || 0) / max) * 100}"></span></span><span class="vs-val">${esc(show(r, r.everest))}</span>
               <span>K2</span><span class="vs-bar vs-bar--k2"><span data-w="${((k || 0) / max) * 100}"></span></span><span class="vs-val">${esc(show(r, r.k2))}</span>
             </div>
-            ${r.note || src ? `<p class="w-note">${esc(r.note || '')}${src ? ` <a href="${esc(src)}" target="_blank" rel="noopener">source</a>` : ''}</p>` : ''}
+            ${r.note || links ? `<p class="w-note">${esc(r.note || '')}${links ? ` ${links}` : ''}</p>` : ''}
           </div>`;
         }).join('')}
       </div>

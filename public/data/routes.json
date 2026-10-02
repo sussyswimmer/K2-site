@@ -1,0 +1,219 @@
+{
+ "routes": [
+  {
+   "id": "abruzzi",
+   "name": "Abruzzi Spur (South-East Ridge)",
+   "first_climbed": "1954-07-31",
+   "first_climbed_label": "31 July 1954",
+   "year": 1954,
+   "team": "Italian expedition led by Ardito Desio; summit by Achille Compagnoni and Lino Lacedelli",
+   "difficulty_notes": "A steep rock ridge fixed with ropes almost all the way. House's Chimney sits just below Camp 2, the Black Pyramid's rock and ice between Camps 2 and 3, then the Bottleneck couloir and traverse beneath a hanging serac above the Shoulder. Rockfall is constant.",
+   "share_of_ascents": "About 75% of all K2 summits (Alan Arnette, June 2022).",
+   "camps": [
+    {
+     "id": "base-camp",
+     "name": "Base Camp",
+     "elevation_m": 5000,
+     "approx": true,
+     "note": "Desio 1954: 16,400 ft; operators list 4,968 m; Arnette gives 5,334 m."
+    },
+    {
+     "id": "abc",
+     "name": "Advanced Base Camp",
+     "elevation_m": 5300,
+     "approx": true,
+     "note": "Madison Mountaineering 2023-25: 5,303 m; Arnette lists 5,650 m."
+    },
+    {
+     "id": "camp-1",
+     "name": "Camp 1",
+     "elevation_m": 6050,
+     "approx": true,
+     "note": "Reported 6,050-6,100 m."
+    },
+    {
+     "id": "camp-2",
+     "name": "Camp 2",
+     "elevation_m": 6700,
+     "approx": true,
+     "note": "House's Chimney is just below."
+    },
+    {
+     "id": "camp-3",
+     "name": "Camp 3",
+     "elevation_m": 7200,
+     "approx": true,
+     "note": "Reported 7,200-7,350 m; Black Pyramid below."
+    },
+    {
+     "id": "camp-4",
+     "name": "Camp 4",
+     "elevation_m": 7900,
+     "approx": true,
+     "note": "On the Shoulder; reported 7,600-8,000 m depending on the year."
+    },
+    {
+     "id": "bottleneck",
+     "name": "The Bottleneck",
+     "elevation_m": 8200,
+     "approx": true,
+     "note": "National Geographic (2008): 27,100 ft, about 8,260 m."
+    },
+    {
+     "id": "summit",
+     "name": "Summit",
+     "elevation_m": 8611,
+     "approx": false
+    }
+   ],
+   "source_title": "A. Arnette, K2 Winter on the Abruzzi (alanarnette.com, 2020)",
+   "source_url": "https://www.alanarnette.com/blog/2020/12/23/k2-winter-on-the-abruzzi/",
+   "alt_sources": [
+    {
+     "title": "A. Arnette, K2 2022 Summer Coverage: How Hard is K2? (alanarnette.com, June 2022)",
+     "url": "https://www.alanarnette.com/2022/06/20/k2-2022-summer-coverage-how-hard-is-k2/"
+    },
+    {
+     "title": "K2 advanced base camp dispatches, 2023-2025 (Madison Mountaineering; operator)",
+     "url": "https://madisonmountaineering.com/tag/k2-advanced-base-camp/"
+    },
+    {
+     "title": "A. Desio, The 1954 Italian Expedition to the Karakoram and the First Ascent of K2 (Himalayan Journal vol. 19)",
+     "url": "https://www.himalayanclub.org/hj/19/7/ghimalayan-journalhimalayan-journal-19the-1954-italian-expedition-to-the-karakoram-and-the-first-ascent-of-k2l/"
+    },
+    {
+     "title": "Is K2 the New Everest? (National Geographic, Sept 2008)",
+     "url": "https://www.nationalgeographic.com/adventure/article/is-k2-the-new-everest"
+    },
+    {
+     "title": "K2 (Encyclopaedia Britannica)",
+     "url": "https://www.britannica.com/place/K2"
+    }
+   ]
+  },
+  {
+   "id": "cesen",
+   "name": "Cesen Route (South-South-East Spur)",
+   "first_climbed": "1994-06-23",
+   "year": 1994,
+   "first_climbed_label": "23 June 1994 to the summit (Tomo Česen soloed it to the Shoulder in 1986)",
+   "team": "Basque expedition: Juanito Oiarzabal, Juan Tomás, Kike de Pablo, Alberto and Félix Iñurrategi",
+   "difficulty_notes": "Runs up the spur west of the Abruzzi and avoids House's Chimney and the Black Pyramid, but is steeper and more exposed to rockfall and avalanches. It joins the Abruzzi on the Shoulder at Camp 4, so both routes share the Bottleneck.",
+   "share_of_ascents": "K2's second most-climbed route (ExplorersWeb, 2025).",
+   "camps": [
+    {
+     "id": "base-camp",
+     "name": "Base Camp",
+     "elevation_m": 5000,
+     "approx": true
+    },
+    {
+     "id": "cesen-c1",
+     "name": "Camp 1",
+     "elevation_m": 5950,
+     "approx": true,
+     "note": "No modern figure found; a 1994 Catalan team placed C1 at 5,500 m."
+    },
+    {
+     "id": "cesen-c2",
+     "name": "Camp 2",
+     "elevation_m": 6320,
+     "approx": true,
+     "note": "Madison Mountaineering 2019: 6,311-6,327 m; 1994 team: 6,450 m."
+    },
+    {
+     "id": "cesen-c3",
+     "name": "Camp 3",
+     "elevation_m": 7000,
+     "approx": true,
+     "note": "Madison Mountaineering 2019: 7,000-7,013 m; 1994 team: 7,000 m."
+    },
+    {
+     "id": "camp-4",
+     "name": "Camp 4 (the Shoulder)",
+     "elevation_m": 7900,
+     "approx": true,
+     "note": "Shared with the Abruzzi; reported 7,600-8,000 m."
+    },
+    {
+     "id": "bottleneck",
+     "name": "The Bottleneck",
+     "elevation_m": 8200,
+     "approx": true
+    },
+    {
+     "id": "summit",
+     "name": "Summit",
+     "elevation_m": 8611,
+     "approx": false
+    }
+   ],
+   "source_title": "The 1995 Disaster on K2, Part 1 (ExplorersWeb, 2025)",
+   "source_url": "https://explorersweb.com/the-1995-k2-disaster-part-1/",
+   "alt_sources": [
+    {
+     "title": "Second Seven Summits: K2 (ExplorersWeb)",
+     "url": "https://explorersweb.com/second-seven-summits-k2/"
+    },
+    {
+     "title": "K2 Cesen Camp 2 (Madison Mountaineering dispatch, July 2019; operator)",
+     "url": "https://madisonmountaineering.com/k2-cesen-camp-2/"
+    },
+    {
+     "title": "K2 Cesen Camp 3 (Madison Mountaineering dispatch, July 2019; operator)",
+     "url": "https://madisonmountaineering.com/k2-cesen-camp-3/"
+    },
+    {
+     "title": "K2 Attempt via the South Spur (American Alpine Journal, 1995)",
+     "url": "https://publications.americanalpineclub.org/articles/12199424702"
+    },
+    {
+     "title": "K2, South-Southeast Spur Attempt (American Alpine Journal, 1988)",
+     "url": "https://publications.americanalpineclub.org/articles/12198824402/Asia-Pakistan-K2-South-Southeast-Spur-Attempt"
+    }
+   ]
+  }
+ ],
+ "other_routes": [
+  {
+   "name": "North Ridge (from China)",
+   "first_climbed": "1982-08-14",
+   "team": "Japanese expedition; summit by Naoe Sakashita, Hiroshi Yoshino and Yukihiro Yanagisawa, with four more the next day",
+   "notes": "Climbed from the Chinese side. Four more team members summited the next day. Yanagisawa fell to his death on the descent.",
+   "source_title": "Late-Season K2 Summits: A History of Great Climbs and Tragedies (ExplorersWeb, 2025)",
+   "source_url": "https://explorersweb.com/late-season-k2-summits-a-history-of-great-climbs-and-tragedies/"
+  },
+  {
+   "name": "Magic Line (South-Southwest Pillar)",
+   "first_climbed": "1986-08-03",
+   "team": "Polish-Slovak team; summit by Przemysław Piasecki, Wojciech Wróż and Petr Božik",
+   "notes": "From the Negrotto Col up the pillar on UIAA IV-V rock and steep snow and ice. Wróż died rappelling in the Bottleneck that night.",
+   "source_title": "K2's Magic Line (American Alpine Journal, 1987)",
+   "source_url": "https://publications.americanalpineclub.org/articles/12198701000/K2s-Magic-Line"
+  },
+  {
+   "name": "Northeast Ridge (American route)",
+   "first_climbed": "1978-09-06",
+   "team": "Jim Whittaker's American expedition; summit by Louis Reichardt and Jim Wickwire, then John Roskelley and Rick Ridgeway",
+   "notes": "A long, corniced ridge from the upper Godwin-Austen Glacier. The third ascent of K2 and the first summits without bottled oxygen.",
+   "source_title": "K2: The End of a 40-Year American Quest (American Alpine Journal, 1979)",
+   "source_url": "https://publications.americanalpineclub.org/articles/12197900100/K2-The-End-of-a-40-Year-American-Quest"
+  },
+  {
+   "name": "South Face (Polish Line)",
+   "first_climbed": "1986-07-08",
+   "team": "Jerzy Kukuczka and Tadeusz Piotrowski",
+   "notes": "Up the centre of the south face without bottled oxygen, joining the Abruzzi for the final climb to the summit. Piotrowski fell to his death on the descent on 10 July.",
+   "source_title": "K2's South Face (American Alpine Journal, 1987)",
+   "source_url": "https://publications.americanalpineclub.org/articles/12198701400/K2s-South-Face"
+  },
+  {
+   "name": "Southwest Ridge",
+   "first_climbed": "1981-08-07",
+   "team": "Eiho Otani (Japan) and Nazir Sabir (Pakistan)",
+   "notes": "A western route; the fifth ascent of K2.",
+   "source_title": "Second Seven Summits: K2 (ExplorersWeb)",
+   "source_url": "https://explorersweb.com/second-seven-summits-k2/"
+  }
+ ]
+}

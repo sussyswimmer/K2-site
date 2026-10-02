@@ -1,0 +1,314 @@
+{
+ "events": [
+  {
+   "id": "survey-1856",
+   "year": 1856,
+   "date": "1856",
+   "title": "Montgomerie sights and labels K2",
+   "body": "Barred from crossing the Indus, Thomas Montgomerie of the Great Trigonometrical Survey sights two prominent Karakoram peaks about 200 km to the north and tags them K1 and K2.",
+   "hotspot": null,
+   "source_title": "Where Did the Name K2 Come From? (ExplorersWeb)",
+   "source_url": "https://explorersweb.com/where-did-the-name-k2-come-from/",
+   "alt_sources": [
+    {
+     "title": "Notes, Himalayan Journal vol. 4 (Himalayan Club)",
+     "url": "https://www.himalayanclub.org/hj/4/18/notes/"
+    }
+   ]
+  },
+  {
+   "id": "godwin-austen-1861",
+   "year": 1861,
+   "date": "1861",
+   "title": "Godwin-Austen reaches the mountain",
+   "body": "Henry Haversham Godwin-Austen travels up the Baltoro Glacier and reaches the southern base of K2. The glacier below the mountain is later named after him.",
+   "hotspot": "base-camp",
+   "source_title": "A Reconnaissance of K2, 1938 (Himalayan Journal vol. 11)",
+   "source_url": "https://www.himalayanclub.org/hj/11/9/a-reconnaissance-of-k2-1938/"
+  },
+  {
+   "id": "attempt-1902",
+   "year": 1902,
+   "date": "1902",
+   "title": "Eckenstein and Crowley try the northeast ridge",
+   "body": "Oscar Eckenstein's party, including Aleister Crowley, spends 68 days on the mountain. Bad weather and illness stop them; estimates of their high point range from about 5,700 m to 6,100 m.",
+   "hotspot": null,
+   "source_title": "O. Clarke, Aleister Crowley, The Wickedest Climber Ever? (Climbing, 2022, via Yahoo Sports)",
+   "source_url": "https://sports.yahoo.com/aleister-crowley-wickedest-climber-ever-173927269.html"
+  },
+  {
+   "id": "abruzzi-1909",
+   "year": 1909,
+   "date": "1909",
+   "title": "The Duke of the Abruzzi tries the spur",
+   "body": "Prince Luigi Amedeo's Italian expedition probes the southeast spur, now the Abruzzi Spur, before judging it too hard for porters. Estimates of the high point range from about 6,100 m to 6,700 m.",
+   "hotspot": "abc",
+   "source_title": "M. Tenderini, The Duke and the Abruzzi Spur (Himalayan Journal vol. 75, 2020)",
+   "source_url": "https://www.himalayanclub.org/hj/75/9/the-duke-and-the-abruzzi-spur/"
+  },
+  {
+   "id": "houston-1938",
+   "year": 1938,
+   "date": "1938-07-21",
+   "title": "Houston and Petzoldt near 26,000 ft",
+   "body": "Charles Houston's American team climbs the Abruzzi, forcing House's Chimney on the way. Paul Petzoldt reaches an estimated 26,000 ft (about 7,925 m) before supplies and weather force a retreat.",
+   "hotspot": "camp-4",
+   "source_title": "C. S. Houston, The American Karakoram Expedition to K2, 1938 (Alpine Journal, 1939)",
+   "source_url": "https://www.alpinejournal.org.uk/Contents/Contents_1939_files/AJ51%2054-69%20Houston%20Americans%20on%20K2.pdf"
+  },
+  {
+   "id": "wiessner-1939",
+   "year": 1939,
+   "date": "1939-07",
+   "title": "Wiessner turns back 700 ft short",
+   "body": "Fritz Wiessner and Pasang Dawa Lama reach about 8,380 m. In the collapse that follows, Dudley Wolfe and the Sherpas Pasang Kikuli, Pasang Kitar and Phinsoo die high on the mountain.",
+   "hotspot": "bottleneck",
+   "source_title": "K2 1939: The Second American Karakoram Expedition (American Alpine Club)",
+   "source_url": "https://americanalpineclub.org/news/2018/2/17/k2-1939-the-second-american-karakoram-expedition"
+  },
+  {
+   "id": "gilkey-1953",
+   "year": 1953,
+   "date": "1953-08-10",
+   "title": "Gilkey lost; 'the Savage Mountain' named",
+   "body": "Art Gilkey is swept away by an avalanche during his evacuation, soon after Pete Schoening's belay held five falling teammates. George Bell later tells reporters K2 is \"a savage mountain that tries to kill you\".",
+   "hotspot": "gilkey-memorial",
+   "source_title": "Arthur K. Gilkey, 1926-1953 (American Alpine Journal, 1954)",
+   "source_url": "https://publications.americanalpineclub.org/articles/12195412900/",
+   "alt_sources": [
+    {
+     "title": "Rewind the Climb: Pete Schoening's Miracle Belay on K2 (American Alpine Club)",
+     "url": "https://americanalpineclub.org/news/2022/1/18/rewind-the-climb-pete-schoenings-miracle-belay-on-k2"
+    },
+    {
+     "title": "Where Did the Name K2 Come From? (ExplorersWeb)",
+     "url": "https://explorersweb.com/where-did-the-name-k2-come-from/"
+    }
+   ]
+  },
+  {
+   "id": "first-ascent-1954",
+   "year": 1954,
+   "date": "1954-07-31",
+   "title": "Compagnoni and Lacedelli reach the summit",
+   "body": "At 6 p.m. two members of Ardito Desio's Italian expedition stand on top. The night before, Walter Bonatti and Amir Mahdi, carrying the summit pair's oxygen, survived an open bivouac at about 8,100 m.",
+   "hotspot": "summit",
+   "source_title": "K2 (Encyclopaedia Britannica)",
+   "source_url": "https://www.britannica.com/place/K2",
+   "alt_sources": [
+    {
+     "title": "J. Wickwire, review of K2: Lies and Treachery (American Alpine Journal, 2010)",
+     "url": "https://publications.americanalpineclub.org/articles/12201036200/K2-Life-and-Death-on-the-Worlds-Most-Dangerous-Mountain-K2-Lies-and-Treachery"
+    }
+   ]
+  },
+  {
+   "id": "second-ascent-1977",
+   "year": 1977,
+   "date": "1977-08-08",
+   "title": "Japanese second ascent",
+   "body": "A 52-member Japanese expedition puts seven people on top over two days, including Ashraf Aman, the first Pakistani to summit K2.",
+   "hotspot": "summit",
+   "source_title": "I. Yoshizawa, K2, Second Ascent (American Alpine Journal, 1978)",
+   "source_url": "https://publications.americanalpineclub.org/articles/12197861402/Asia-Pakistan-K2-Second-Ascent"
+  },
+  {
+   "id": "no-oxygen-1978",
+   "year": 1978,
+   "date": "1978-09-06",
+   "title": "Americans summit, first without oxygen",
+   "body": "Louis Reichardt summits after his oxygen set fails, with Jim Wickwire. The next day John Roskelley and Rick Ridgeway follow without bottled oxygen.",
+   "hotspot": "summit",
+   "source_title": "K2: The End of a 40-Year American Quest (American Alpine Journal, 1979)",
+   "source_url": "https://publications.americanalpineclub.org/articles/12197900100/K2-The-End-of-a-40-Year-American-Quest"
+  },
+  {
+   "id": "messner-1979",
+   "year": 1979,
+   "date": "1979-07-12",
+   "title": "Messner and Dacher, no bottled oxygen",
+   "body": "Reinhold Messner and Michael Dacher reach the summit by the Abruzzi Ridge at 4:40 p.m., without bottled oxygen.",
+   "hotspot": "summit",
+   "source_title": "Asia, Pakistan-Karakoram, K2 [Messner expedition] (American Alpine Journal, 1980)",
+   "source_url": "https://publications.americanalpineclub.org/articles/12198063903/Asia-PakistanKarakoram-K2"
+  },
+  {
+   "id": "north-ridge-1982",
+   "year": 1982,
+   "date": "1982-08-14",
+   "title": "North Ridge climbed from China",
+   "body": "A Japanese team makes the first ascent of the North Ridge. Yukihiro Yanagisawa falls to his death on the descent.",
+   "hotspot": null,
+   "source_title": "Late-Season K2 Summits: A History of Great Climbs and Tragedies (ExplorersWeb, 2025)",
+   "source_url": "https://explorersweb.com/late-season-k2-summits-a-history-of-great-climbs-and-tragedies/"
+  },
+  {
+   "id": "rutkiewicz-1986",
+   "year": 1986,
+   "date": "1986-06-23",
+   "title": "Wanda Rutkiewicz, first woman on top",
+   "body": "The Polish climber reaches the summit at 10:15 a.m. without bottled oxygen. Liliane and Maurice Barrard summit the same day and die on the descent.",
+   "hotspot": "summit",
+   "source_title": "K2: Remembering Wanda Rutkiewicz (ExplorersWeb)",
+   "source_url": "https://explorersweb.com/k2-remembering-wanda-rutkiewicz-2018-01-05-68635/"
+  },
+  {
+   "id": "black-summer-1986",
+   "year": 1986,
+   "date": "1986-08",
+   "title": "A summer of 13 deaths",
+   "body": "By ExplorersWeb's count, 13 people die on K2 in 1986, a season that also brings many summits on several routes.",
+   "hotspot": null,
+   "source_title": "Late-Season K2 Summits: A History of Great Climbs and Tragedies (ExplorersWeb, 2025)",
+   "source_url": "https://explorersweb.com/late-season-k2-summits-a-history-of-great-climbs-and-tragedies/"
+  },
+  {
+   "id": "magic-line-1986",
+   "year": 1986,
+   "date": "1986-08-03",
+   "title": "The Magic Line is completed",
+   "body": "Piasecki, Wróż and Božik finish the south-southwest pillar. Wróż dies that night rappelling in the Bottleneck.",
+   "hotspot": "bottleneck",
+   "source_title": "K2's Magic Line (American Alpine Journal, 1987)",
+   "source_url": "https://publications.americanalpineclub.org/articles/12198701000/K2s-Magic-Line"
+  },
+  {
+   "id": "cesen-1994",
+   "year": 1994,
+   "date": "1994-06-23",
+   "title": "Basque team completes the Cesen route",
+   "body": "Five Basque climbers reach the summit by the south-southeast spur that Tomo Česen had climbed to the Shoulder in 1986. It becomes K2's second most popular route.",
+   "hotspot": "camp-4",
+   "source_title": "Second Seven Summits: K2 (ExplorersWeb)",
+   "source_url": "https://explorersweb.com/second-seven-summits-k2/",
+   "alt_sources": [
+    {
+     "title": "The 1995 Disaster on K2, Part 1 (ExplorersWeb, 2025)",
+     "url": "https://explorersweb.com/the-1995-k2-disaster-part-1/"
+    }
+   ]
+  },
+  {
+   "id": "disaster-1995",
+   "year": 1995,
+   "date": "1995-08-13",
+   "title": "Six die on the way down",
+   "body": "Six climbers from several expeditions die on the way down from the summit, among them Alison Hargreaves and Rob Slater.",
+   "hotspot": null,
+   "source_title": "Late-Season K2 Summits: A History of Great Climbs and Tragedies (ExplorersWeb, 2025)",
+   "source_url": "https://explorersweb.com/late-season-k2-summits-a-history-of-great-climbs-and-tragedies/"
+  },
+  {
+   "id": "record-corrected-2007",
+   "year": 2007,
+   "date": "2007",
+   "title": "Italian Alpine Club backs Bonatti",
+   "body": "After Lacedelli's 2004 account, the CAI formally accepts Walter Bonatti's version of the 1954 summit push, ending a dispute that had lasted more than 50 years.",
+   "hotspot": null,
+   "source_title": "J. Wickwire, review of K2: Lies and Treachery (American Alpine Journal, 2010)",
+   "source_url": "https://publications.americanalpineclub.org/articles/12201036200/K2-Life-and-Death-on-the-Worlds-Most-Dangerous-Mountain-K2-Lies-and-Treachery"
+  },
+  {
+   "id": "disaster-2008",
+   "year": 2008,
+   "date": "2008-08-01",
+   "title": "Eleven die around the Bottleneck",
+   "body": "On 1 and 2 August, two climbers fall on the ascent, then a serac collapse cuts the fixed ropes in the Bottleneck. Eleven die, the worst single disaster in K2's history.",
+   "hotspot": "bottleneck",
+   "source_title": "A. Foxfield, What was the 2008 K2 disaster? (Advnture, 2025)",
+   "source_url": "https://www.advnture.com/climbing-mountaineering/what-was-the-2008-k2-disaster-a-tragic-event-in-the-history-of-the-worlds-second-highest-mountain"
+  },
+  {
+   "id": "winter-2021",
+   "year": 2021,
+   "date": "2021-01-16",
+   "title": "First winter ascent by ten Nepalis",
+   "body": "Ten Nepali climbers, including Nirmal Purja and Mingma G Sherpa, regroup below the summit and walk to the top together singing their national anthem. K2 was the last 8,000er unclimbed in winter.",
+   "hotspot": "summit",
+   "source_title": "F. Wilkinson, Nepali Mountaineers Achieve Historic Winter First on K2 (National Geographic, Jan 2021)",
+   "source_url": "https://www.nationalgeographic.com/adventure/article/nims-purja-attempts-to-summit-k2-the-worlds-second-highest-peak"
+  },
+  {
+   "id": "winter-deaths-2021",
+   "year": 2021,
+   "date": "2021-02-05",
+   "title": "Sadpara, Snorri and Mohr go missing",
+   "body": "Muhammad Ali Sadpara, John Snorri and Juan Pablo Mohr disappear near the Bottleneck during a winter summit push. They are declared dead on 18 February.",
+   "hotspot": "bottleneck",
+   "source_title": "Sadpara, two other mountaineers missing on K2 declared dead (Dawn, Feb 2021)",
+   "source_url": "https://www.dawn.com/news/1608060"
+  },
+  {
+   "id": "record-day-2022",
+   "year": 2022,
+   "date": "2022-07-22",
+   "title": "About 150 summits in a day",
+   "body": "Fixed ropes and big commercial teams put about 150 people on top in one day, more than double the previous record for a whole season.",
+   "hotspot": "summit",
+   "source_title": "A. Benavides, Number of Climbers on K2 Soars (ExplorersWeb, July 2024)",
+   "source_url": "https://explorersweb.com/number-of-climbers-on-k2-soar/"
+  },
+  {
+   "id": "hassan-2023",
+   "year": 2023,
+   "date": "2023-07-27",
+   "title": "Porter Muhammad Hassan dies at the Bottleneck",
+   "body": "The 25-year-old Pakistani porter dies after an accident on the fixed ropes while climbers continue past. Gilgit-Baltistan authorities open an inquiry.",
+   "hotspot": "bottleneck",
+   "source_title": "Pakistani K2 porter death inquiry will hear claims of negligence (The National, Aug 2023)",
+   "source_url": "https://www.thenationalnews.com/world/2023/08/12/pakistani-k2-porter-death-inquiry-will-hear-claims-of-negligence/"
+  },
+  {
+   "id": "west-face-2024",
+   "year": 2024,
+   "date": "2024-07-28",
+   "title": "Two Japanese alpinists die on the West Face",
+   "body": "Kazuya Hiraide and Kenro Nakajima, climbing alpine style, fall around 7,500 m on the West Face. About 50 to 65 people summit by the normal routes that season.",
+   "hotspot": null,
+   "source_title": "A. Arnette, K2 2024 Coverage: Summits and Deaths (alanarnette.com)",
+   "source_url": "https://www.alanarnette.com/2024/07/28/k2-2024-coverage-summits/",
+   "alt_sources": [
+    {
+     "title": "A. Arnette, K2 2025 Coverage Wrap: A Rocky Season (alanarnette.com)",
+     "url": "https://www.alanarnette.com/blog/2025/08/24/k2-2025-coverage-wrap-a-rocky-season/"
+    }
+   ]
+  },
+  {
+   "id": "season-2025",
+   "year": 2025,
+   "date": "2025-08",
+   "title": "A late, rocky season",
+   "body": "No one summits in July. In August about 42 climbers reach the top; two people die from rockfall during the season.",
+   "hotspot": null,
+   "source_title": "A. Arnette, K2 2025 Coverage Wrap: A Rocky Season (alanarnette.com)",
+   "source_url": "https://www.alanarnette.com/blog/2025/08/24/k2-2025-coverage-wrap-a-rocky-season/"
+  },
+  {
+   "id": "purja-2026",
+   "year": 2026,
+   "date": "2026-07-30",
+   "title": "Avalanche kills ten on Broad Peak",
+   "body": "An avalanche on K2's neighbour kills all ten members of a team, among them Nirmal Purja, leader of the 2021 winter ascent.",
+   "hotspot": "broad-peak",
+   "source_title": "A. Callaghan and G. Schaffer, How Nims Purja's Broad Peak climb ended in deadly disaster (National Geographic, Aug 2026)",
+   "source_url": "https://www.nationalgeographic.com/adventure/article/nims-purja-avalanche-broad-peak-himalayas"
+  },
+  {
+   "id": "season-2026",
+   "year": 2026,
+   "date": "2026-08",
+   "title": "A summer with no K2 summits",
+   "body": "Heavy July snow and an early-August warm spell keep everyone off the top. No one reaches K2's summit all season.",
+   "hotspot": null,
+   "source_title": "No One Summited K2 This Year, Capping a Brutal Season in the Karakoram (SnowBrains, Aug 2026)",
+   "source_url": "https://snowbrains.com/no-one-summited-k2-brutal-karakoram-season/",
+   "alt_sources": [
+    {
+     "title": "A. Arnette, Karakorum 2026 Season Wrap Up (alanarnette.com, Aug 2026)",
+     "url": "https://www.alanarnette.com/2026/08/22/karakorum-2026-season-wrap-up/"
+    }
+   ]
+  }
+ ]
+}

@@ -17,10 +17,10 @@ const DISPLAY = {
   'broad-peak': ['Broad Peak', 8051],
   'gasherbrum-i': ['Gasherbrum I', 8080],
   'gasherbrum-ii': ['Gasherbrum II', 8035],
-  'gasherbrum-iv': ['Gasherbrum IV', 7932],
+  'gasherbrum-iv': ['Gasherbrum IV', 7925],
   'gilkey-memorial': ['Gilkey Memorial', null],
   'cesen-c1': ['Cesen C1', 5950],
-  'cesen-c2': ['Cesen C2', 6400],
+  'cesen-c2': ['Cesen C2', 6320],
   'cesen-c3': ['Cesen C3', 7000],
 };
 

@@ -32,7 +32,7 @@ function profileSVG(routes, active) {
 export async function mount(el, ctx) {
   const data = await getRoutes();
   const routes = data.routes.filter((r) => r.id === 'abruzzi' || r.id === 'cesen');
-  routes.forEach((r) => r.camps.forEach((c) => { c.short = c.name.replace('Camp ', 'C').replace('Base Camp', 'BC').replace('Advanced Base Camp', 'ABC').replace('The Bottleneck', 'Bottleneck'); }));
+  routes.forEach((r) => r.camps.forEach((c) => { c.short = c.name.replace(/\s*\(.*\)$/, '').replace('Advanced Base Camp', 'ABC').replace('Base Camp', 'BC').replace('Camp ', 'C').replace('The Bottleneck', 'Bottleneck'); }));
   let active = 'abruzzi';
   el.innerHTML = `
   <div class="w">

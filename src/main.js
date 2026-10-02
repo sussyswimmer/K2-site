@@ -9,7 +9,7 @@ import './styles/main.css';
 import './styles/widgets.css';
 import { detectCaps } from './core/caps.js';
 import { initUnits, render as renderUnits } from './core/units.js';
-import { getFacts, asset } from './core/data.js';
+import { getFacts, getJSON, asset } from './core/data.js';
 import { initSound } from './ui/audio.js';
 import { createSidePanel, createDrawer, factHTML } from './ui/panels.js';
 import { WIDGETS, mountWidget, STATIC_CTX } from './ui/widgets/index.js';
@@ -64,7 +64,7 @@ async function startStatic() {
     if (!notes.length) return;
     const box = document.createElement('details');
     box.className = 'field-notes';
-    box.innerHTML = `<summary>Field notes · ${notes.length} places</summary>`;
+    box.innerHTML = `<summary>Field notes · ${notes.length} notes</summary>`;
     box.insertAdjacentHTML('beforeend', notes.map(factHTML).join(''));
     renderUnits(box);
     ch.querySelector('.card').appendChild(box);
@@ -213,23 +213,53 @@ async function startWebGL() {
   }
 }
 
+// Every source cited anywhere on the page: facts, timeline, routes, comparison, weather and
+// the notes inside the widgets. Deduplicated by URL, sorted by title.
+const WIDGET_SOURCES = [
+  { title: 'Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)', url: 'https://www.mdpi.com/1660-4601/18/6/3040', checked: '2026-10-02' },
+  { title: 'K2 expedition itinerary (Seven Summit Treks; operator)', url: 'https://sevensummittreks.com/page/mt-k2-expedition-8611m.html', checked: '2026-10-02' },
+  { title: 'A. Arnette, K2 2021 Summer Season Coverage Begins (alanarnette.com)', url: 'https://www.alanarnette.com/blog/2021/06/26/k2-2021-summer-season-coverage-begins/', checked: '2026-10-02' },
+];
+
 async function fillSources() {
   const list = document.getElementById('sources-list');
-  const facts = await getFacts().catch(() => []);
+  const opt = (p) => getJSON(p).catch(() => null);
+  const [facts, timeline, routes, compare, weather] = await Promise.all([
+    opt('data/facts.json'), opt('data/timeline.json'), opt('data/routes.json'), opt('data/everest_vs_k2.json'), opt('data/weather.json'),
+  ]);
   const seen = new Map();
-  for (const f of facts) {
-    if (!f.source_url || seen.has(f.source_url)) continue;
-    seen.set(f.source_url, f);
-  }
-  list.innerHTML = [...seen.values()].map((f) => {
+  const add = (url, title, checked) => {
+    if (!url) return;
+    const prev = seen.get(url);
+    if (!prev) seen.set(url, { url, title: title || url, checked });
+    else if (checked && !prev.checked) prev.checked = checked;
+  };
+  const withAlt = (x) => {
+    add(x.source_url, x.source_title, x.verified_on);
+    (x.alt_sources || []).forEach((a) => add(a.url, a.title, x.verified_on));
+  };
+  (facts || []).forEach(withAlt);
+  (timeline?.events || []).forEach(withAlt);
+  (routes?.routes || []).forEach(withAlt);
+  (routes?.other_routes || []).forEach(withAlt);
+  (compare?.rows || []).forEach((r) => {
+    add(r.everest_source_url, r.everest_source_title, compare.as_of);
+    add(r.k2_source_url, r.k2_source_title, compare.as_of);
+    add(r.source_url, r.source_title, compare.as_of);
+  });
+  (compare?.profiles_sources || []).forEach((a) => add(a.url, a.title, compare.as_of));
+  (weather?.sources || []).forEach((a) => add(a.url, a.title, weather.verified_on || weather.as_of));
+  WIDGET_SOURCES.forEach((a) => add(a.url, a.title, a.checked));
+  const items = [...seen.values()].sort((a, b) => a.title.localeCompare(b.title));
+  list.innerHTML = items.map((f) => {
     const li = document.createElement('li');
     const a = document.createElement('a');
-    a.href = f.source_url;
+    a.href = f.url;
     a.rel = 'noopener';
     a.target = '_blank';
-    a.textContent = f.source_title || f.source_url;
+    a.textContent = f.title;
     li.appendChild(a);
-    if (f.verified_on) li.append(` · checked ${f.verified_on}`);
+    if (f.checked) li.append(` · checked ${f.checked}`);
     return li.outerHTML;
   }).join('');
 }

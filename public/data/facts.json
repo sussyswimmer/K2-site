@@ -1,112 +1,1140 @@
 [
  {
-  "id": "summit",
-  "hotspot": "summit",
-  "chapter": 5,
-  "title": "Summit",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
+  "id": "height-8611",
+  "chapter": 0,
+  "hotspot": null,
+  "title": "The second-highest point on Earth",
+  "body": "K2 rises to 8,611 m, second only to Everest. It stands in the Karakoram, on the line between Pakistan-administered Gilgit-Baltistan and a Chinese-administered part of Xinjiang. Its base on the Godwin-Austen Glacier lies at about 4,570 m, so the mountain itself climbs roughly 4,000 m.",
+  "stat": 8611,
+  "unit": "m",
+  "source_title": "K2 (Encyclopaedia Britannica)",
+  "source_url": "https://www.britannica.com/place/K2",
+  "verified_on": "2026-10-02"
  },
  {
-  "id": "bottleneck",
-  "hotspot": "bottleneck",
-  "chapter": 4,
-  "title": "Bottleneck",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
+  "id": "everest-gap",
+  "chapter": 0,
+  "hotspot": null,
+  "title": "About 238 metres lower than Everest",
+  "body": "In 2020 China and Nepal jointly announced Everest's height as 8,848.86 m. K2, at 8,611 m, is about 238 m lower. Everest stands on the Nepal-Tibet border at 27°59′N, roughly 1,300 km to the southeast.",
+  "stat": 238,
+  "unit": "m",
+  "source_title": "Mount Everest (Encyclopaedia Britannica)",
+  "source_url": "https://www.britannica.com/place/Mount-Everest",
+  "verified_on": "2026-10-02"
  },
  {
-  "id": "camp-4",
-  "hotspot": "camp-4",
-  "chapter": 3,
-  "title": "Camp 4",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
+  "id": "savage-mountain",
+  "chapter": 0,
+  "hotspot": null,
+  "title": "Where 'the Savage Mountain' comes from",
+  "body": "The nickname traces back to George Bell, a member of Charles Houston's 1953 American expedition, which lost Art Gilkey on the descent. As ExplorersWeb recounts, Bell told reporters afterwards: \"It's a savage mountain that tries to kill you.\"",
+  "stat": null,
+  "unit": null,
+  "source_title": "Where Did the Name K2 Come From? (ExplorersWeb)",
+  "source_url": "https://explorersweb.com/where-did-the-name-k2-come-from/",
+  "verified_on": "2026-10-02"
  },
  {
-  "id": "camp-3",
-  "hotspot": "camp-3",
-  "chapter": 3,
-  "title": "Camp 3",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
+  "id": "among-hardest",
+  "chapter": 0,
+  "hotspot": null,
+  "title": "One of the hardest mountains to climb",
+  "body": "Britannica calls K2 one of the world's most difficult mountains to climb and gives two reasons: the severe storms that sweep the Karakoram and the peak's great height. The expeditions of 1902, 1909, 1938, 1939 and 1953 all turned back below the top before the first ascent in 1954.",
+  "stat": null,
+  "unit": null,
+  "source_title": "K2 (Encyclopaedia Britannica)",
+  "source_url": "https://www.britannica.com/place/K2",
+  "verified_on": "2026-10-02"
  },
  {
-  "id": "camp-2",
-  "hotspot": "camp-2",
-  "chapter": 3,
-  "title": "Camp 2",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
+  "id": "latitude-35n",
+  "chapter": 0,
+  "hotspot": null,
+  "title": "Eight degrees farther north than Everest",
+  "body": "K2's summit lies at 35°52′N, about 8° north of Everest's. A 2021 study found the difference matters most in winter: air pressure on K2's summit falls by about 21 hPa between July and midwinter, against about 9 hPa on Everest. Less pressure means less oxygen in every breath.",
+  "stat": 35.88,
+  "unit": "°N",
+  "source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+  "source_url": "https://www.mdpi.com/1660-4601/18/6/3040",
+  "verified_on": "2026-10-02"
  },
  {
-  "id": "camp-1",
-  "hotspot": "camp-1",
-  "chapter": 3,
-  "title": "Camp 1",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
+  "id": "late-july-window",
+  "chapter": 0,
+  "hotspot": null,
+  "title": "A short summer window",
+  "body": "K2 is climbed almost entirely in the Karakoram summer. Teams trek in during June and early July, then spend weeks carrying loads between camps to acclimatize. As Alan Arnette notes in his season coverage, most K2 summits occur at the end of July.",
+  "stat": null,
+  "unit": null,
+  "source_title": "A. Arnette, K2 2026: Coverage Begins & First Summits (alanarnette.com)",
+  "source_url": "https://www.alanarnette.com/2026/07/09/k2-2026-coverage-begins-first-summits/",
+  "verified_on": "2026-10-02"
  },
  {
-  "id": "abc",
-  "hotspot": "abc",
-  "chapter": 3,
-  "title": "Abc",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
- },
- {
-  "id": "base-camp",
-  "hotspot": "base-camp",
-  "chapter": 2,
-  "title": "Base Camp",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
+  "id": "baltoro-glacier",
+  "chapter": 1,
+  "hotspot": null,
+  "title": "The Baltoro: about 63 km of ice",
+  "body": "The Baltoro Glacier is about 63 km long and covers some 554 km², according to a 2024 study in The Cryosphere; a 2006 study gave 62 km. Its snout sits at about 3,400 m. Roughly 38% of its surface is buried under rock debris, so much of the walk is over stones, not bare ice.",
+  "stat": 63,
+  "unit": "km",
+  "source_title": "Wendleder et al., Velocity variations and hydrological drainage at Baltoro Glacier, Pakistan (The Cryosphere, 2024)",
+  "source_url": "https://tc.copernicus.org/articles/18/1085/2024/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Mihalcea et al., Ice ablation and meteorological conditions on the debris-covered area of Baltoro glacier (Annals of Glaciology, 2006)",
+    "url": "https://www.cambridge.org/core/journals/annals-of-glaciology/article/ice-ablation-and-meteorological-conditions-on-the-debriscovered-area-of-baltoro-glacier-karakoram-pakistan/5D4890DB9492BC305A2BA897B59DE326"
+   },
+   {
+    "title": "Baltoro Glacier (Encyclopaedia Britannica)",
+    "url": "https://www.britannica.com/place/Baltoro-Glacier"
+   }
+  ]
  },
  {
   "id": "concordia",
-  "hotspot": "concordia",
   "chapter": 1,
-  "title": "Concordia",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
+  "hotspot": "concordia",
+  "title": "Concordia, where two glaciers meet",
+  "body": "Concordia is the junction where the Godwin-Austen Glacier, flowing from K2, joins the Baltoro, about 33 km above the snout. A 2024 glaciology study puts it at 4,600 m; a 2006 study measured about 4,460 m. In summer the ice here moves 0.5 to 0.65 m a day.",
+  "stat": 4600,
+  "unit": "m",
+  "source_title": "Wendleder et al., Velocity variations and hydrological drainage at Baltoro Glacier, Pakistan (The Cryosphere, 2024)",
+  "source_url": "https://tc.copernicus.org/articles/18/1085/2024/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Mihalcea et al., Ice ablation and meteorological conditions on the debris-covered area of Baltoro glacier (Annals of Glaciology, 2006)",
+    "url": "https://www.cambridge.org/core/journals/annals-of-glaciology/article/ice-ablation-and-meteorological-conditions-on-the-debriscovered-area-of-baltoro-glacier-karakoram-pakistan/5D4890DB9492BC305A2BA897B59DE326"
+   }
+  ]
+ },
+ {
+  "id": "askole-to-concordia",
+  "chapter": 1,
+  "hotspot": "concordia",
+  "title": "Askole to Concordia: about a week",
+  "body": "Askole, about seven hours by jeep from Skardu, is the last village. One trekking operator's itinerary reaches Concordia on the seventh day of walking and K2 Base Camp two days later. This is an operator's schedule; we found no independent source for typical trek times.",
+  "stat": 7,
+  "unit": "days",
+  "source_title": "Concordia and K2 Base Camp Classic Trek itinerary (Adventure Alternative; operator)",
+  "source_url": "https://www.adventurealternative.com/pakistan/concordia-k2-base-camp-trek/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2 8000m Summit Expedition (Furtenbach Adventures; operator)",
+    "url": "https://www.furtenbachadventures.com/en/trips/k2/"
+   }
+  ]
+ },
+ {
+  "id": "skardu-1958",
+  "chapter": 1,
+  "hotspot": null,
+  "title": "From Skardu on foot, 1958",
+  "body": "In 1958 the Italian Gasherbrum IV expedition flew from Rawalpindi to Skardu, the main town of Baltistan on the Indus. The team left Skardu on 30 May and walked into Askole, the last village, on 4 June.",
+  "stat": null,
+  "unit": null,
+  "source_title": "Notes and Expeditions [Italian Gasherbrum IV expedition, 1958] (Himalayan Journal vol. 21)",
+  "source_url": "https://www.himalayanclub.org/hj/21/16/notes-and-expeditions-2/",
+  "verified_on": "2026-10-02"
  },
  {
   "id": "broad-peak",
-  "hotspot": "broad-peak",
   "chapter": 1,
-  "title": "Broad Peak",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
+  "hotspot": "broad-peak",
+  "title": "Broad Peak, K2's neighbour",
+  "body": "Broad Peak stands on the eastern rim of the Godwin-Austen Glacier near Concordia, facing K2. Hermann Buhl, Marcus Schmuck, Fritz Wintersteller and Kurt Diemberger made the first ascent on 9 June 1957, without bottled oxygen or high-altitude porters. The Himalayan Journal gave 26,414 ft (8,051 m); Britannica lists 8,047 m.",
+  "stat": 8051,
+  "unit": "m",
+  "source_title": "Broad Peak and Chogolisa, 1957 (Himalayan Journal vol. 21)",
+  "source_url": "https://www.himalayanclub.org/hj/21/1/broad-peak-and-chogolisa-1957/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "gasherbrum-i",
+  "chapter": 1,
+  "hotspot": "gasherbrum-i",
+  "title": "Gasherbrum I, the Hidden Peak",
+  "body": "Gasherbrum I, also called Hidden Peak, lies southeast of K2. Pete Schoening and Andy Kauffman, of an eight-member American team led by Nick Clinch, made the first ascent on 5 July 1958. ExplorersWeb gives its height as 8,080 m; Britannica gives 8,068 m.",
+  "stat": 8080,
+  "unit": "m",
+  "source_title": "A Summary of Past Winter Expeditions on Gasherbrum I (ExplorersWeb)",
+  "source_url": "https://explorersweb.com/winter-expeditions-gasherbrum-i/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Gasherbrum I (Encyclopaedia Britannica)",
+    "url": "https://www.britannica.com/place/Gasherbrum-I"
+   }
+  ]
+ },
+ {
+  "id": "gasherbrum-ii",
+  "chapter": 1,
+  "hotspot": "gasherbrum-ii",
+  "title": "Gasherbrum II, an Austrian first",
+  "body": "At 1:30 p.m. on 7 July 1956, Fritz Moravec, Josef Larch and Hans Willenpart reached the summit of Gasherbrum II, given as 26,360 ft (about 8,035 m). They used no bottled oxygen and had spent the previous night in a high bivouac at about 24,600 ft.",
+  "stat": 8035,
+  "unit": "m",
+  "source_title": "Austrian Karakoram Expedition, 1956 (Himalayan Journal vol. 20)",
+  "source_url": "https://www.himalayanclub.org/hj/20/3/austrian-karakoram-expedition-1956/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "gasherbrum-iv",
+  "chapter": 1,
+  "hotspot": "gasherbrum-iv",
+  "title": "Gasherbrum IV and the Shining Wall",
+  "body": "Gasherbrum IV's west face, about 2,500 m high, is nicknamed the Shining Wall; the name Gasherbrum itself comes from Balti rgasha, beautiful, and brum, mountain. Wojciech Kurtyka and Robert Schauer climbed the face in 1985 but stopped near 7,900 m, short of the main summit. The AAJ gives the peak 7,925 m; another AAJ note says 7,980 m.",
+  "stat": 7925,
+  "unit": "m",
+  "source_title": "W. Kurtyka, The Shining Wall of Gasherbrum IV (American Alpine Journal, 1986)",
+  "source_url": "https://publications.americanalpineclub.org/articles/12198600100/The-Shining-Wall-of-Gasherbrum-IV",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Gasherbrum IV, Attempt of Bonatti-Mauri Route (American Alpine Journal, 2003)",
+    "url": "https://publications.americanalpineclub.org/articles/12200335901/Asia-Pakistan-Gasherbrum-IV-Attempt-of-Bonatti-Mauri-Route"
+   }
+  ]
+ },
+ {
+  "id": "gasherbrum-iv-1958",
+  "chapter": 1,
+  "hotspot": "gasherbrum-iv",
+  "title": "Bonatti and Mauri on top, 1958",
+  "body": "Walter Bonatti and Carlo Mauri reached the highest point of Gasherbrum IV at 12:30 p.m. on 6 August 1958, on Riccardo Cassin's Italian expedition, after a hard climb of the northeast ridge. Four years earlier Bonatti had survived a night in the open high on K2.",
+  "stat": null,
+  "unit": null,
+  "source_title": "Notes and Expeditions [Italian Gasherbrum IV expedition, 1958] (Himalayan Journal vol. 21)",
+  "source_url": "https://www.himalayanclub.org/hj/21/16/notes-and-expeditions-2/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Gasherbrum IV, Attempt of Bonatti-Mauri Route (American Alpine Journal, 2003)",
+    "url": "https://publications.americanalpineclub.org/articles/12200335901/Asia-Pakistan-Gasherbrum-IV-Attempt-of-Bonatti-Mauri-Route"
+   }
+  ]
+ },
+ {
+  "id": "base-camp",
+  "chapter": 2,
+  "hotspot": "base-camp",
+  "title": "Base Camp on the glacier",
+  "body": "K2 Base Camp sits on the moraine of the Godwin-Austen Glacier below the mountain's south side. Ardito Desio's 1954 expedition put it at 16,400 ft, about 5,000 m. Modern figures vary with the exact spot: one operator lists 4,968 m, while Alan Arnette gives 5,334 m.",
+  "stat": 5000,
+  "unit": "m",
+  "source_title": "A. Desio, The 1954 Italian Expedition to the Karakoram and the First Ascent of K2 (Himalayan Journal vol. 19)",
+  "source_url": "https://www.himalayanclub.org/hj/19/7/ghimalayan-journalhimalayan-journal-19the-1954-italian-expedition-to-the-karakoram-and-the-first-ascent-of-k2l/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2 advanced base camp dispatches, 2023-2025 (Madison Mountaineering; operator)",
+    "url": "https://madisonmountaineering.com/tag/k2-advanced-base-camp/"
+   },
+   {
+    "title": "A. Arnette, K2 Winter on the Abruzzi (alanarnette.com, 2020)",
+    "url": "https://www.alanarnette.com/blog/2020/12/23/k2-winter-on-the-abruzzi/"
+   }
+  ]
  },
  {
   "id": "gilkey-memorial",
-  "hotspot": "gilkey-memorial",
   "chapter": 2,
-  "title": "Gilkey Memorial",
-  "body": "Placeholder \u2014 researched in Debrief 4.",
-  "source_title": null,
-  "source_url": null,
-  "verified_on": null
+  "hotspot": "gilkey-memorial",
+  "title": "The Gilkey Memorial",
+  "body": "Art Gilkey, a 26-year-old geologist from Iowa, was swept away by an avalanche on 10 August 1953 while his teammates were lowering him off the mountain. They built a memorial cairn for him at the confluence of the Godwin-Austen and Savoia glaciers, and it became the memorial to everyone K2 has killed.",
+  "stat": null,
+  "unit": null,
+  "source_title": "Arthur K. Gilkey, 1926-1953 (American Alpine Journal, 1954)",
+  "source_url": "https://publications.americanalpineclub.org/articles/12195412900/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Trekking: Honouring the fallen (Dawn, 2016)",
+    "url": "https://www.dawn.com/news/1292902"
+   }
+  ]
+ },
+ {
+  "id": "memorial-plaques",
+  "chapter": 2,
+  "hotspot": "gilkey-memorial",
+  "title": "Plaques on the stones",
+  "body": "The cairn near Base Camp is hung with shiny metal plaques for climbers who died on K2, among them Alison Hargreaves, Rob Slater and Jeff Lakes, and climbers from Korea and many other countries. One plaque is written in Urdu.",
+  "stat": null,
+  "unit": null,
+  "source_title": "Trekking: Honouring the fallen (Dawn, 2016)",
+  "source_url": "https://www.dawn.com/news/1292902",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "survey-1856",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "First seen by a surveyor, 1856",
+  "body": "In 1856 Thomas Montgomerie of the Survey of India first observed K2 from the survey station on Haramukh, a peak in Kashmir. Two years later a surveyor named Shelverton fixed its position from the Indus valley series of triangulation.",
+  "stat": 1856,
+  "unit": null,
+  "source_title": "Notes, Himalayan Journal vol. 4 (Himalayan Club)",
+  "source_url": "https://www.himalayanclub.org/hj/4/18/notes/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "k2-name",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "Named by a survey code",
+  "body": "Under orders not to cross the Indus, Montgomerie spotted two prominent peaks about 200 km to the north and tagged them K1 and K2, for Karakoram. The Balti called the second something like Chhogo ri, 'big mountain'. A push to name it after Henry Godwin-Austen failed, and the code stuck.",
+  "stat": 200,
+  "unit": "km",
+  "source_title": "Where Did the Name K2 Come From? (ExplorersWeb)",
+  "source_url": "https://explorersweb.com/where-did-the-name-k2-come-from/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "other-names",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "One mountain, several names",
+  "body": "Britannica lists K2's other names: Mount Godwin Austen, after a 19th-century English geographer; Chogori; Dapsang; and Qogir Feng, its name in Chinese. The 'K2' label came from being the second peak measured in the Karakoram.",
+  "stat": null,
+  "unit": null,
+  "source_title": "K2 (Encyclopaedia Britannica)",
+  "source_url": "https://www.britannica.com/place/K2",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "godwin-austen-1861",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "Godwin-Austen reaches the foot, 1861",
+  "body": "In 1861 Henry Haversham Godwin-Austen made what the Himalayan Journal later called a splendid pioneer trip up the Baltoro Glacier and its surrounding peaks, and reached the southern base of K2. The glacier below the mountain now carries his name.",
+  "stat": null,
+  "unit": null,
+  "source_title": "A Reconnaissance of K2, 1938 (Himalayan Journal vol. 11)",
+  "source_url": "https://www.himalayanclub.org/hj/11/9/a-reconnaissance-of-k2-1938/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Where Did the Name K2 Come From? (ExplorersWeb)",
+    "url": "https://explorersweb.com/where-did-the-name-k2-come-from/"
+   }
+  ]
+ },
+ {
+  "id": "attempt-1902",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "The first attempt, 1902",
+  "body": "Oscar Eckenstein led the first attempt in 1902, with Aleister Crowley, Guy Knowles, Jules Jacot-Guillarmod, Heinrich Pfannl and Victor Wessely, on the northeast ridge. Only eight of their 68 days offered usable weather. Their high point is uncertain: Britannica says 5,670 m; the Himalayan Journal in 1939 said about 20,000 ft.",
+  "stat": 68,
+  "unit": "days",
+  "source_title": "O. Clarke, Aleister Crowley, The Wickedest Climber Ever? (Climbing, 2022, via Yahoo Sports)",
+  "source_url": "https://sports.yahoo.com/aleister-crowley-wickedest-climber-ever-173927269.html",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2 (Encyclopaedia Britannica)",
+    "url": "https://www.britannica.com/place/K2"
+   },
+   {
+    "title": "A Reconnaissance of K2, 1938 (Himalayan Journal vol. 11)",
+    "url": "https://www.himalayanclub.org/hj/11/9/a-reconnaissance-of-k2-1938/"
+   }
+  ]
+ },
+ {
+  "id": "abruzzi-1909",
+  "chapter": 2,
+  "hotspot": "abc",
+  "title": "The Duke of the Abruzzi's ridge, 1909",
+  "body": "In 1909 Prince Luigi Amedeo, Duke of the Abruzzi, led a large Italian expedition to K2. His guides Joseph and Laurent Petigax pushed up the southeast spur until they judged it too steep for porters. The ridge has carried his name ever since. High-point estimates range from about 6,100 m to 6,700 m.",
+  "stat": null,
+  "unit": null,
+  "source_title": "M. Tenderini, The Duke and the Abruzzi Spur (Himalayan Journal vol. 75, 2020)",
+  "source_url": "https://www.himalayanclub.org/hj/75/9/the-duke-and-the-abruzzi-spur/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2 (Encyclopaedia Britannica)",
+    "url": "https://www.britannica.com/place/K2"
+   },
+   {
+    "title": "C. S. Houston, The American Karakoram Expedition to K2, 1938 (Alpine Journal, 1939)",
+    "url": "https://www.alpinejournal.org.uk/Contents/Contents_1939_files/AJ51%2054-69%20Houston%20Americans%20on%20K2.pdf"
+   }
+  ]
+ },
+ {
+  "id": "houston-1938",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "Houston proves the route, 1938",
+  "body": "Charles Houston's small 1938 American party chose the Abruzzi Ridge and showed it would go. On 21 July Paul Petzoldt reached a point he estimated at 26,000 ft or higher, about 7,925 m, below the summit rocks. Short of supplies and wary of storms, the team turned back.",
+  "stat": null,
+  "unit": null,
+  "source_title": "C. S. Houston, The American Karakoram Expedition to K2, 1938 (Alpine Journal, 1939)",
+  "source_url": "https://www.alpinejournal.org.uk/Contents/Contents_1939_files/AJ51%2054-69%20Houston%20Americans%20on%20K2.pdf",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "wiessner-1939",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "700 feet short, 1939",
+  "body": "In July 1939 Fritz Wiessner and Pasang Dawa Lama reached about 27,500 ft (8,380 m), roughly 700 ft below the top, but turned back at 6:30 p.m. rather than descend in the dark. The expedition then unravelled: Dudley Wolfe and the Sherpas Pasang Kikuli, Pasang Kitar and Phinsoo died high on the mountain.",
+  "stat": 8380,
+  "unit": "m",
+  "source_title": "K2 1939: The Second American Karakoram Expedition (American Alpine Club)",
+  "source_url": "https://americanalpineclub.org/news/2018/2/17/k2-1939-the-second-american-karakoram-expedition",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "belay-1953",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "The Belay, 1953",
+  "body": "In August 1953 the American team gave up its summit bid to carry down Art Gilkey, who had blood clots in his leg. During the descent five climbers fell in a tangle; Pete Schoening held them all, and Gilkey, on one ice-axe belay. Soon afterwards Gilkey, left anchored to the slope, was gone.",
+  "stat": null,
+  "unit": null,
+  "source_title": "Rewind the Climb: Pete Schoening's Miracle Belay on K2 (American Alpine Club)",
+  "source_url": "https://americanalpineclub.org/news/2022/1/18/rewind-the-climb-pete-schoenings-miracle-belay-on-k2",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "first-ascent-1954",
+  "chapter": 2,
+  "hotspot": "summit",
+  "title": "First ascent, 31 July 1954",
+  "body": "At 6 p.m. on 31 July 1954, Achille Compagnoni and Lino Lacedelli of Ardito Desio's Italian expedition reached the summit by the Abruzzi Ridge. The success came at a cost: on 21 June the guide Mario Puchoz had died at Camp 2 with symptoms of pneumonia.",
+  "stat": 1954,
+  "unit": null,
+  "source_title": "K2 (Encyclopaedia Britannica)",
+  "source_url": "https://www.britannica.com/place/K2",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "A. Desio, The 1954 Italian Expedition to the Karakoram and the First Ascent of K2 (Himalayan Journal vol. 19)",
+    "url": "https://www.himalayanclub.org/hj/19/7/ghimalayan-journalhimalayan-journal-19the-1954-italian-expedition-to-the-karakoram-and-the-first-ascent-of-k2l/"
+   }
+  ]
+ },
+ {
+  "id": "bonatti-mahdi",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "A night in the open at 8,100 m",
+  "body": "The summit pair depended on oxygen carried up by Walter Bonatti and the Hunza porter Amir Mahdi. Compagnoni and Lacedelli had moved their last camp out of reach, so Bonatti and Mahdi survived an open bivouac at 26,568 ft, about 8,100 m. Mahdi was badly frostbitten; even Desio's official report notes his toes were seriously frostbitten.",
+  "stat": 8100,
+  "unit": "m",
+  "source_title": "J. Wickwire, review of K2: Lies and Treachery (American Alpine Journal, 2010)",
+  "source_url": "https://publications.americanalpineclub.org/articles/12201036200/K2-Life-and-Death-on-the-Worlds-Most-Dangerous-Mountain-K2-Lies-and-Treachery",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "A. Desio, The 1954 Italian Expedition to the Karakoram and the First Ascent of K2 (Himalayan Journal vol. 19)",
+    "url": "https://www.himalayanclub.org/hj/19/7/ghimalayan-journalhimalayan-journal-19the-1954-italian-expedition-to-the-karakoram-and-the-first-ascent-of-k2l/"
+   },
+   {
+    "title": "G. Bowley, Walter Bonatti, daring mountaineer, dies at 81 (New York Times News Service, 2011)",
+    "url": "https://bendbulletin.com/2011/09/17/walter-bonatti-daring-mountaineer-dies-at-81/"
+   }
+  ]
+ },
+ {
+  "id": "record-corrected",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "Half a century to fix the record",
+  "body": "For decades the official story implied Bonatti had used the summit oxygen himself. In 2004 Lacedelli published his own account, confirming Bonatti's version in all respects, and in 2007 the Italian Alpine Club (CAI) formally accepted it, 53 years after the climb.",
+  "stat": 53,
+  "unit": "years",
+  "source_title": "J. Wickwire, review of K2: Lies and Treachery (American Alpine Journal, 2010)",
+  "source_url": "https://publications.americanalpineclub.org/articles/12201036200/K2-Life-and-Death-on-the-Worlds-Most-Dangerous-Mountain-K2-Lies-and-Treachery",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "second-ascent-1977",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "The second ascent, 1977",
+  "body": "K2 waited 23 years for a second ascent. A 52-member Japanese expedition climbed the southeast ridge; Shoji Nakamura, Takeyoshi Takatsuka and Tsuneo Shigehiro reached the top on 8 August 1977. The next day four more followed, among them Ashraf Aman, the first Pakistani on the summit.",
+  "stat": null,
+  "unit": null,
+  "source_title": "I. Yoshizawa, K2, Second Ascent (American Alpine Journal, 1978)",
+  "source_url": "https://publications.americanalpineclub.org/articles/12197861402/Asia-Pakistan-K2-Second-Ascent",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Late-Season K2 Summits: A History of Great Climbs and Tragedies (ExplorersWeb, 2025)",
+    "url": "https://explorersweb.com/late-season-k2-summits-a-history-of-great-climbs-and-tragedies/"
+   }
+  ]
+ },
+ {
+  "id": "rutkiewicz-1986",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "The first woman on top, 1986",
+  "body": "At 10:15 a.m. on 23 June 1986, Wanda Rutkiewicz of Poland became the first woman to stand on K2's summit, climbing without bottled oxygen. The French couple Liliane and Maurice Barrard also reached the top that day; both died on the descent.",
+  "stat": null,
+  "unit": null,
+  "source_title": "K2: Remembering Wanda Rutkiewicz (ExplorersWeb)",
+  "source_url": "https://explorersweb.com/k2-remembering-wanda-rutkiewicz-2018-01-05-68635/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "black-summer-1986",
+  "chapter": 2,
+  "hotspot": null,
+  "title": "The summer of 1986",
+  "body": "1986 brought many summits on several routes, and 13 deaths, by ExplorersWeb's count. Climbers died in avalanches, in a crevasse and in falls on the descent, among other causes. The 2008 disaster killed fewer people in total, but in a far shorter time.",
+  "stat": 13,
+  "unit": "deaths",
+  "source_title": "Late-Season K2 Summits: A History of Great Climbs and Tragedies (ExplorersWeb, 2025)",
+  "source_url": "https://explorersweb.com/late-season-k2-summits-a-history-of-great-climbs-and-tragedies/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2's Magic Line (American Alpine Journal, 1987)",
+    "url": "https://publications.americanalpineclub.org/articles/12198701000/K2s-Magic-Line"
+   },
+   {
+    "title": "A. Foxfield, What was the 2008 K2 disaster? (Advnture, 2025)",
+    "url": "https://www.advnture.com/climbing-mountaineering/what-was-the-2008-k2-disaster-a-tragic-event-in-the-history-of-the-worlds-second-highest-mountain"
+   }
+  ]
+ },
+ {
+  "id": "abc",
+  "chapter": 3,
+  "hotspot": "abc",
+  "title": "Advanced Base Camp",
+  "body": "Advanced Base Camp sits on the glacier at the foot of the Abruzzi Spur, where the fixed ropes begin. Madison Mountaineering's dispatches from 2023 to 2025 put it at 5,303 m; Alan Arnette lists 5,650 m. Camp heights shift between teams, years and sources.",
+  "stat": 5300,
+  "unit": "m",
+  "source_title": "K2 advanced base camp dispatches, 2023-2025 (Madison Mountaineering; operator)",
+  "source_url": "https://madisonmountaineering.com/tag/k2-advanced-base-camp/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "A. Arnette, K2 Winter on the Abruzzi (alanarnette.com, 2020)",
+    "url": "https://www.alanarnette.com/blog/2020/12/23/k2-winter-on-the-abruzzi/"
+   }
+  ]
+ },
+ {
+  "id": "camp-1",
+  "chapter": 3,
+  "hotspot": "camp-1",
+  "title": "Camp 1 on the spur",
+  "body": "Camp 1 is the first tent platform on the spur itself, at about 6,050 m. Published figures run from 6,050 m (Alan Arnette) to 6,100 m (a 1994 American-Canadian team), depending on the ledge used that season.",
+  "stat": 6050,
+  "unit": "m",
+  "source_title": "A. Arnette, K2 Winter on the Abruzzi (alanarnette.com, 2020)",
+  "source_url": "https://www.alanarnette.com/blog/2020/12/23/k2-winter-on-the-abruzzi/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2 Ascent and Tragedy (American Alpine Journal, 1995)",
+    "url": "https://publications.americanalpineclub.org/articles/12199424800/Asia-Pakistan-K2-Ascent-and-Tragedy"
+   },
+   {
+    "title": "K2 advanced base camp dispatches, 2023-2025 (Madison Mountaineering; operator)",
+    "url": "https://madisonmountaineering.com/tag/k2-advanced-base-camp/"
+   }
+  ]
+ },
+ {
+  "id": "camp-2",
+  "chapter": 3,
+  "hotspot": "camp-2",
+  "title": "Camp 2, above House's Chimney",
+  "body": "Camp 2 sits at about 6,700 m. Just below it is House's Chimney, a near-vertical rock crack about 30 m (100 ft) high at roughly 6,550 m, which Alan Arnette describes as the route's first technical crux. Climbers haul themselves up it on fixed ropes.",
+  "stat": 6700,
+  "unit": "m",
+  "source_title": "A. Arnette, K2 Winter on the Abruzzi (alanarnette.com, 2020)",
+  "source_url": "https://www.alanarnette.com/blog/2020/12/23/k2-winter-on-the-abruzzi/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "houses-chimney",
+  "chapter": 3,
+  "hotspot": "camp-2",
+  "title": "How House's Chimney got its name",
+  "body": "On 14 July 1938 Bill House and Bob Bates forced a chimney of loose rock with a third wall of ice. Charles Houston called it the most formidable climbing his team would face, and it was christened House's Chimney. Houston gave its height as 150 ft; modern accounts say about 100 ft.",
+  "stat": null,
+  "unit": null,
+  "source_title": "C. S. Houston, The American Karakoram Expedition to K2, 1938 (Alpine Journal, 1939)",
+  "source_url": "https://www.alpinejournal.org.uk/Contents/Contents_1939_files/AJ51%2054-69%20Houston%20Americans%20on%20K2.pdf",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "A. Arnette, K2 Winter on the Abruzzi (alanarnette.com, 2020)",
+    "url": "https://www.alanarnette.com/blog/2020/12/23/k2-winter-on-the-abruzzi/"
+   }
+  ]
+ },
+ {
+  "id": "camp-3",
+  "chapter": 3,
+  "hotspot": "camp-3",
+  "title": "Camp 3, above the Black Pyramid",
+  "body": "Between Camps 2 and 3 lies the Black Pyramid, a dark buttress of steep rock and ice and the hardest sustained climbing on the route, with frequent rockfall. Camp 3 sits above it at about 7,200 m; other sources give 7,250 to 7,350 m.",
+  "stat": 7200,
+  "unit": "m",
+  "source_title": "A. Arnette, K2 Winter on the Abruzzi (alanarnette.com, 2020)",
+  "source_url": "https://www.alanarnette.com/blog/2020/12/23/k2-winter-on-the-abruzzi/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2 advanced base camp dispatches, 2023-2025 (Madison Mountaineering; operator)",
+    "url": "https://madisonmountaineering.com/tag/k2-advanced-base-camp/"
+   },
+   {
+    "title": "K2 Ascent and Tragedy (American Alpine Journal, 1995)",
+    "url": "https://publications.americanalpineclub.org/articles/12199424800/Asia-Pakistan-K2-Ascent-and-Tragedy"
+   }
+  ]
+ },
+ {
+  "id": "camp-4",
+  "chapter": 3,
+  "hotspot": "camp-4",
+  "title": "Camp 4 on the Shoulder",
+  "body": "Camp 4 is pitched on the Shoulder, the broad snow ridge below the summit pyramid where the Abruzzi and Cesen routes meet. Its height depends on how far up the Shoulder a team goes: ExplorersWeb puts the Shoulder at about 7,600 m and Camp 4 at 7,950 m; other sources give 7,680 to 8,000 m.",
+  "stat": 7900,
+  "unit": "m",
+  "source_title": "The 1995 Disaster on K2, Part 1 (ExplorersWeb, 2025)",
+  "source_url": "https://explorersweb.com/the-1995-k2-disaster-part-1/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2 advanced base camp dispatches, 2023-2025 (Madison Mountaineering; operator)",
+    "url": "https://madisonmountaineering.com/tag/k2-advanced-base-camp/"
+   },
+   {
+    "title": "K2 Ascent and Tragedy (American Alpine Journal, 1995)",
+    "url": "https://publications.americanalpineclub.org/articles/12199424800/Asia-Pakistan-K2-Ascent-and-Tragedy"
+   }
+  ]
+ },
+ {
+  "id": "abruzzi-share",
+  "chapter": 3,
+  "hotspot": null,
+  "title": "Three in four summits use the Abruzzi",
+  "body": "The Abruzzi Spur, first tried in 1909 and first climbed in 1954, has carried about 75% of all K2 summits, according to Alan Arnette. Its main hazards are steep rock, rockfall and, above the Shoulder, a Bottleneck couloir he describes as a channel for falling rock and ice.",
+  "stat": 75,
+  "unit": "%",
+  "source_title": "A. Arnette, K2 2022 Summer Coverage: How Hard is K2? (alanarnette.com, June 2022)",
+  "source_url": "https://www.alanarnette.com/2022/06/20/k2-2022-summer-coverage-how-hard-is-k2/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "cesen-route",
+  "chapter": 3,
+  "hotspot": "camp-4",
+  "title": "The Cesen route",
+  "body": "The Cesen or Basque route climbs the south-southeast spur and joins the Abruzzi on the Shoulder. Tomo Česen reached the Shoulder alone in 1986, and a Basque team completed the route to the summit in 1994. It is now K2's second most-climbed route. A 1988 AAJ note dates Česen's climb to 1987.",
+  "stat": null,
+  "unit": null,
+  "source_title": "The 1995 Disaster on K2, Part 1 (ExplorersWeb, 2025)",
+  "source_url": "https://explorersweb.com/the-1995-k2-disaster-part-1/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2, South-Southeast Spur Attempt (American Alpine Journal, 1988)",
+    "url": "https://publications.americanalpineclub.org/articles/12198824402/Asia-Pakistan-K2-South-Southeast-Spur-Attempt"
+   }
+  ]
+ },
+ {
+  "id": "north-ridge",
+  "chapter": 3,
+  "hotspot": null,
+  "title": "The North Ridge, from China",
+  "body": "K2's North Ridge rises from the Chinese side. A Japanese expedition made the first ascent: Naoe Sakashita, Hiroshi Yoshino and Yukihiro Yanagisawa reached the top on 14 August 1982, and four more followed the next day. Yanagisawa fell to his death on the descent.",
+  "stat": null,
+  "unit": null,
+  "source_title": "Late-Season K2 Summits: A History of Great Climbs and Tragedies (ExplorersWeb, 2025)",
+  "source_url": "https://explorersweb.com/late-season-k2-summits-a-history-of-great-climbs-and-tragedies/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Second Seven Summits: K2 (ExplorersWeb)",
+    "url": "https://explorersweb.com/second-seven-summits-k2/"
+   }
+  ]
+ },
+ {
+  "id": "magic-line",
+  "chapter": 3,
+  "hotspot": null,
+  "title": "The Magic Line, 1986",
+  "body": "The Magic Line climbs the south-southwest pillar from the Negrotto Col. Przemysław Piasecki, Wojciech Wróż and Petr Božik of a Polish-Slovak team reached the summit by it at 6 p.m. on 3 August 1986. That night Wróż fell to his death while rappelling fixed ropes in the Bottleneck.",
+  "stat": null,
+  "unit": null,
+  "source_title": "K2's Magic Line (American Alpine Journal, 1987)",
+  "source_url": "https://publications.americanalpineclub.org/articles/12198701000/K2s-Magic-Line",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "northeast-ridge-1978",
+  "chapter": 3,
+  "hotspot": null,
+  "title": "A new route for the third ascent",
+  "body": "In 1978 Jim Whittaker's American team made K2's third ascent by a new route that started on the long, corniced northeast ridge. Louis Reichardt and Jim Wickwire reached the top on 6 September. Wickwire, caught by darkness, survived a night alone in a bivouac sack at about 27,500 ft.",
+  "stat": null,
+  "unit": null,
+  "source_title": "K2: The End of a 40-Year American Quest (American Alpine Journal, 1979)",
+  "source_url": "https://publications.americanalpineclub.org/articles/12197900100/K2-The-End-of-a-40-Year-American-Quest",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "bottleneck",
+  "chapter": 4,
+  "hotspot": "bottleneck",
+  "title": "The Bottleneck",
+  "body": "Above the Shoulder the route funnels into the Bottleneck, which National Geographic described in 2008 as a 60-degree couloir at 27,100 ft, about 8,260 m; most accounts say about 8,200 m. Climbers must pass beneath an overhanging serac here, then traverse under the same ice toward the summit slopes.",
+  "stat": 8200,
+  "unit": "m",
+  "source_title": "Is K2 the New Everest? (National Geographic, Sept 2008)",
+  "source_url": "https://www.nationalgeographic.com/adventure/article/is-k2-the-new-everest",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2: Pakistani Porter Dies at the Bottleneck (ExplorersWeb, July 2023)",
+    "url": "https://explorersweb.com/k2-porter-dies-bottleneck/"
+   }
+  ]
+ },
+ {
+  "id": "serac-1938",
+  "chapter": 4,
+  "hotspot": "bottleneck",
+  "title": "Ice that falls almost daily",
+  "body": "In 1938 Charles Houston found the inner half of the upper Shoulder strewn with ice blocks, fragments of serac falls from the broken cliffs below the summit that, he judged, swept the slope almost daily. His team hurried across. Seventy years later a serac collapse above the Bottleneck would cut the fixed ropes.",
+  "stat": null,
+  "unit": null,
+  "source_title": "C. S. Houston, The American Karakoram Expedition to K2, 1938 (Alpine Journal, 1939)",
+  "source_url": "https://www.alpinejournal.org.uk/Contents/Contents_1939_files/AJ51%2054-69%20Houston%20Americans%20on%20K2.pdf",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Is K2 the New Everest? (National Geographic, Sept 2008)",
+    "url": "https://www.nationalgeographic.com/adventure/article/is-k2-the-new-everest"
+   }
+  ]
+ },
+ {
+  "id": "disaster-2008",
+  "chapter": 4,
+  "hotspot": "bottleneck",
+  "title": "August 2008: eleven dead",
+  "body": "On 1 and 2 August 2008, eleven climbers died on K2. Two fell during the crowded ascent. That evening a block of ice broke from the serac above the Bottleneck, killing Rolf Bae and leaving the fixed ropes in tatters; others stranded above died in falls and ice collapses the next day.",
+  "stat": 11,
+  "unit": "deaths",
+  "source_title": "A. Foxfield, What was the 2008 K2 disaster? (Advnture, 2025)",
+  "source_url": "https://www.advnture.com/climbing-mountaineering/what-was-the-2008-k2-disaster-a-tragic-event-in-the-history-of-the-worlds-second-highest-mountain",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Is K2 the New Everest? (National Geographic, Sept 2008)",
+    "url": "https://www.nationalgeographic.com/adventure/article/is-k2-the-new-everest"
+   },
+   {
+    "title": "K2: Rescues and Fatalities (Alpinist, Aug 2008)",
+    "url": "https://alpinist.com/newswire/k2-rescues-and-fatalities/"
+   }
+  ]
+ },
+ {
+  "id": "worst-single-event",
+  "chapter": 4,
+  "hotspot": null,
+  "title": "K2's worst single disaster",
+  "body": "Advnture calls the 2008 disaster the worst in K2's history. In 2008 National Geographic noted that only the 1937 Nanga Parbat avalanche, which killed seven Germans and nine porters, had killed more people in a single mountaineering accident. The 1986 season killed 13, over two months.",
+  "stat": null,
+  "unit": null,
+  "source_title": "A. Foxfield, What was the 2008 K2 disaster? (Advnture, 2025)",
+  "source_url": "https://www.advnture.com/climbing-mountaineering/what-was-the-2008-k2-disaster-a-tragic-event-in-the-history-of-the-worlds-second-highest-mountain",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Is K2 the New Everest? (National Geographic, Sept 2008)",
+    "url": "https://www.nationalgeographic.com/adventure/article/is-k2-the-new-everest"
+   },
+   {
+    "title": "Late-Season K2 Summits: A History of Great Climbs and Tragedies (ExplorersWeb, 2025)",
+    "url": "https://explorersweb.com/late-season-k2-summits-a-history-of-great-climbs-and-tragedies/"
+   }
+  ]
+ },
+ {
+  "id": "pressure-8000",
+  "chapter": 4,
+  "hotspot": null,
+  "title": "A third of the air",
+  "body": "Plugging 8,000 m into NASA's standard-atmosphere formula gives an air pressure of about 357 hPa, roughly 35% of the 1,013 hPa at sea level. The air is still about 21% oxygen, but each breath holds only about a third as many oxygen molecules. That is why climbers call the altitudes above 8,000 m the death zone.",
+  "stat": 35,
+  "unit": "%",
+  "source_title": "Earth Atmosphere Model, metric units (NASA Glenn Research Center)",
+  "source_url": "https://www.grc.nasa.gov/www/k-12/airplane/atmosmet.html",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Szymczak et al., Death Zone Weather Extremes Mountaineers Have Experienced in Successful Ascents (Frontiers in Physiology, 2021)",
+    "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.696335/full"
+   }
+  ]
+ },
+ {
+  "id": "k2-summit-pressure",
+  "chapter": 4,
+  "hotspot": "summit",
+  "title": "Pressure on the summit",
+  "body": "Using weather data from 1979 to 2019, a 2021 study found that air pressure on K2's summit averages about 347 hPa in July, against 333 hPa on Everest in May. In midwinter K2 drops to about 326 hPa, which the authors convert to a perceived altitude of about 9,100 m.",
+  "stat": 347,
+  "unit": "hPa",
+  "source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+  "source_url": "https://www.mdpi.com/1660-4601/18/6/3040",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "ratio-1994",
+  "chapter": 4,
+  "hotspot": null,
+  "title": "One death for every three summits",
+  "body": "By ExplorersWeb's tally, 113 climbers reached K2's summit between 1954 and 1994, and 38 died on the mountain. That is about one death for every three successful ascents, a ratio that shaped K2's reputation for decades.",
+  "stat": 34,
+  "unit": "deaths per 100 summits",
+  "source_title": "The 1995 Disaster on K2, Part 1 (ExplorersWeb, 2025)",
+  "source_url": "https://explorersweb.com/the-1995-k2-disaster-part-1/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "ratio-2007",
+  "chapter": 4,
+  "hotspot": null,
+  "title": "About one death per four summits",
+  "body": "From 1954 to 2007, 284 people summited K2 and 66 died: about one death for every four summits. Over the same years Everest had 3,681 summiters and 210 deaths, which led National Geographic to call K2 roughly four times as dangerous.",
+  "stat": 23,
+  "unit": "deaths per 100 summits",
+  "source_title": "Is K2 the New Everest? (National Geographic, Sept 2008)",
+  "source_url": "https://www.nationalgeographic.com/adventure/article/is-k2-the-new-everest",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "ratio-2022",
+  "chapter": 4,
+  "hotspot": null,
+  "title": "The ratio before the boom",
+  "body": "Through spring 2022, Alan Arnette counted about 516 summits and 93 deaths on K2, which he put at 17%, against 2.7% on Everest. Then came the commercial boom: about 150 people reached the top on a single day that July.",
+  "stat": 17,
+  "unit": "%",
+  "source_title": "A. Arnette, K2 2022 Summer Coverage: How Hard is K2? (alanarnette.com, June 2022)",
+  "source_url": "https://www.alanarnette.com/2022/06/20/k2-2022-summer-coverage-how-hard-is-k2/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "A. Benavides, Number of Climbers on K2 Soars (ExplorersWeb, July 2024)",
+    "url": "https://explorersweb.com/number-of-climbers-on-k2-soar/"
+   }
+  ]
+ },
+ {
+  "id": "ratio-now",
+  "chapter": 4,
+  "hotspot": null,
+  "title": "About 11 deaths per 100 summits now",
+  "body": "Outside counted about 700 summits and 96 deaths in August 2022. Adding later seasons (112 summits and one death in 2023, about 50 to 65 and at least two in 2024, about 42 and two in 2025, none in 2026) gives roughly 905 to 935 summits and 100 to 103 deaths. This is our estimate.",
+  "stat": 11,
+  "unit": "deaths per 100 summits (estimate)",
+  "source_title": "O. Clarke, Is K2, the 'Savage Mountain,' Becoming Less Deadly? (Outside, Aug 2022, via Yahoo)",
+  "source_url": "https://www.yahoo.com/lifestyle/k2-savage-mountain-becoming-less-154359117.html",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "A. Benavides, Number of Climbers on K2 Soars (ExplorersWeb, July 2024)",
+    "url": "https://explorersweb.com/number-of-climbers-on-k2-soar/"
+   },
+   {
+    "title": "A. Arnette, K2 2024 Coverage: Summits and Deaths (alanarnette.com)",
+    "url": "https://www.alanarnette.com/2024/07/28/k2-2024-coverage-summits/"
+   },
+   {
+    "title": "A. Arnette, K2 2025 Coverage Wrap: A Rocky Season (alanarnette.com)",
+    "url": "https://www.alanarnette.com/blog/2025/08/24/k2-2025-coverage-wrap-a-rocky-season/"
+   },
+   {
+    "title": "No One Summited K2 This Year, Capping a Brutal Season in the Karakoram (SnowBrains, Aug 2026)",
+    "url": "https://snowbrains.com/no-one-summited-k2-brutal-karakoram-season/"
+   }
+  ]
+ },
+ {
+  "id": "deadliest-now",
+  "chapter": 4,
+  "hotspot": null,
+  "title": "No longer the worst ratio",
+  "body": "K2 is no longer the 8,000 m peak with the worst death-to-summit ratio. In 2024 ExplorersWeb, citing statistics compiled by Rodrigo Granzotto, gave that distinction to Nanga Parbat. Annapurna, long seen as the deadliest, then stood at 476 summits and 73 deaths.",
+  "stat": null,
+  "unit": null,
+  "source_title": "How Annapurna Was Tamed and Lost the \"Most Dangerous\" Record (ExplorersWeb, April 2024)",
+  "source_url": "https://explorersweb.com/how-annapurna-was-tamed-and-lost-the-most-dangerous-record/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "hassan-2023",
+  "chapter": 4,
+  "hotspot": "bottleneck",
+  "title": "A death in the queue, 2023",
+  "body": "On 27 July 2023, Muhammad Hassan, a 25-year-old Pakistani porter, died at the Bottleneck after an accident on the fixed ropes. Drone footage appeared to show climbers stepping past him on their way to the summit, and Gilgit-Baltistan's tourism authorities opened an inquiry into claims of negligence.",
+  "stat": null,
+  "unit": null,
+  "source_title": "Pakistani K2 porter death inquiry will hear claims of negligence (The National, Aug 2023)",
+  "source_url": "https://www.thenationalnews.com/world/2023/08/12/pakistani-k2-porter-death-inquiry-will-hear-claims-of-negligence/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "K2: Pakistani Porter Dies at the Bottleneck (ExplorersWeb, July 2023)",
+    "url": "https://explorersweb.com/k2-porter-dies-bottleneck/"
+   },
+   {
+    "title": "First Step to a Better Future: Retrieving Muhammad Hassan's Body from K2 (ExplorersWeb, Aug 2024)",
+    "url": "https://explorersweb.com/first-step-to-a-better-future-retrieving-muhammad-hassans-body-from-k2/"
+   }
+  ]
+ },
+ {
+  "id": "winter-2021-deaths",
+  "chapter": 4,
+  "hotspot": "bottleneck",
+  "title": "Lost near the Bottleneck, winter 2021",
+  "body": "Three weeks after the first winter ascent, Muhammad Ali Sadpara of Pakistan, John Snorri of Iceland and Juan Pablo Mohr of Chile went missing near the Bottleneck on 5 February 2021 during a winter summit bid. They were declared dead on 18 February.",
+  "stat": null,
+  "unit": null,
+  "source_title": "Sadpara, two other mountaineers missing on K2 declared dead (Dawn, Feb 2021)",
+  "source_url": "https://www.dawn.com/news/1608060",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "disaster-1995",
+  "chapter": 4,
+  "hotspot": null,
+  "title": "Six lost on the descent, 1995",
+  "body": "On 13 August 1995 six climbers from different expeditions died on their way down from the summit, among them Alison Hargreaves of Britain and Rob Slater of the United States.",
+  "stat": 6,
+  "unit": "deaths",
+  "source_title": "Late-Season K2 Summits: A History of Great Climbs and Tragedies (ExplorersWeb, 2025)",
+  "source_url": "https://explorersweb.com/late-season-k2-summits-a-history-of-great-climbs-and-tragedies/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "summit",
+  "chapter": 5,
+  "hotspot": "summit",
+  "title": "The summit",
+  "body": "K2's 8,611 m summit is colder than Everest's in winter. Using ERA5 weather data, a 2021 study found a mean July temperature of about −21 °C on top, with winds around 15 m/s. In midwinter the mean falls to about −45 °C, and the wind chill to about −76 °C.",
+  "stat": 8611,
+  "unit": "m",
+  "source_title": "Szymczak et al., Comparison of Environmental Conditions on Summits of Mount Everest and K2 (IJERPH, 2021)",
+  "source_url": "https://www.mdpi.com/1660-4601/18/6/3040",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "winter-2021",
+  "chapter": 5,
+  "hotspot": "summit",
+  "title": "Winter at last, 16 January 2021",
+  "body": "On 16 January 2021 ten Nepali climbers made the first winter ascent of K2. Teams led by Nirmal Purja and Mingma G Sherpa joined forces with Sona Sherpa. The whole group waited just below the summit, then stepped onto it together, singing the Nepali national anthem.",
+  "stat": 10,
+  "unit": "climbers",
+  "source_title": "F. Wilkinson, Nepali Mountaineers Achieve Historic Winter First on K2 (National Geographic, Jan 2021)",
+  "source_url": "https://www.nationalgeographic.com/adventure/article/nims-purja-attempts-to-summit-k2-the-worlds-second-highest-peak",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "Top 10 Expeditions of 2021, #2: The First Winter Ascent of K2 (ExplorersWeb)",
+    "url": "https://explorersweb.com/top-10-expeditions-of-2021-2-the-first-winter-ascent-of-k2/"
+   }
+  ]
+ },
+ {
+  "id": "last-winter-8000er",
+  "chapter": 5,
+  "hotspot": null,
+  "title": "The last 8,000er climbed in winter",
+  "body": "K2 was the last of the world's 14 peaks above 8,000 m to be climbed in winter. Everest was the first, in February 1980. A Polish expedition made the first winter attempt on K2 in 1987-88, and National Geographic counts five more attempts over the following three decades.",
+  "stat": null,
+  "unit": null,
+  "source_title": "F. Wilkinson, Nepali Mountaineers Achieve Historic Winter First on K2 (National Geographic, Jan 2021)",
+  "source_url": "https://www.nationalgeographic.com/adventure/article/nims-purja-attempts-to-summit-k2-the-worlds-second-highest-peak",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "The Climbing History of Winter Everest (ExplorersWeb)",
+    "url": "https://explorersweb.com/the-climbing-history-of-winter-everest/"
+   }
+  ]
+ },
+ {
+  "id": "winter-oxygen",
+  "chapter": 5,
+  "hotspot": null,
+  "title": "Bottled oxygen in winter",
+  "body": "Most of the ten winter summiters used bottled oxygen. Nirmal Purja said he climbed without it, a claim ExplorersWeb noted was thinly documented. The team pushed for the top from Camp 3 without setting up Camp 4 first.",
+  "stat": null,
+  "unit": null,
+  "source_title": "Top 10 Expeditions of 2021, #2: The First Winter Ascent of K2 (ExplorersWeb)",
+  "source_url": "https://explorersweb.com/top-10-expeditions-of-2021-2-the-first-winter-ascent-of-k2/",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "winter-summit-pressure",
+  "chapter": 5,
+  "hotspot": "summit",
+  "title": "Thinner air on the winter summit",
+  "body": "A 2021 study of successful ascents estimated air pressure on K2's summit at about 334 hPa on the winter summit day, against about 349 hPa on average for its non-winter ascents. Every breath on top that day held noticeably less oxygen than in summer.",
+  "stat": 334,
+  "unit": "hPa",
+  "source_title": "Szymczak et al., Death Zone Weather Extremes Mountaineers Have Experienced in Successful Ascents (Frontiers in Physiology, 2021)",
+  "source_url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.696335/full",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "first-no-oxygen-1978",
+  "chapter": 5,
+  "hotspot": null,
+  "title": "First summit without bottled oxygen",
+  "body": "On 6 September 1978 Louis Reichardt's oxygen set failed high on K2, so he dropped it and kept going, reaching the top with Jim Wickwire, who used oxygen. The next day John Roskelley and Rick Ridgeway left their unused cylinders at about 27,000 ft and summited without, the first rope team to do so.",
+  "stat": null,
+  "unit": null,
+  "source_title": "K2: The End of a 40-Year American Quest (American Alpine Journal, 1979)",
+  "source_url": "https://publications.americanalpineclub.org/articles/12197900100/K2-The-End-of-a-40-Year-American-Quest",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "messner-1979",
+  "chapter": 5,
+  "hotspot": null,
+  "title": "Messner and Dacher, 1979",
+  "body": "Reinhold Messner and Michael Dacher reached the summit at 4:40 p.m. on 12 July 1979 by the Abruzzi Ridge, using no bottled oxygen. They had planned a harder line up the south-southwest pillar, the Magic Line, but switched to the Abruzzi for lack of time.",
+  "stat": null,
+  "unit": null,
+  "source_title": "Asia, Pakistan-Karakoram, K2 [Messner expedition] (American Alpine Journal, 1980)",
+  "source_url": "https://publications.americanalpineclub.org/articles/12198063903/Asia-PakistanKarakoram-K2",
+  "verified_on": "2026-10-02"
+ },
+ {
+  "id": "record-day-2022",
+  "chapter": 5,
+  "hotspot": null,
+  "title": "About 150 summits in one day",
+  "body": "On 22 July 2022 about 150 climbers reached the summit in a single day, more than double the previous best for a whole season, 62 in 2018. Pakistan issued 207 K2 permits that year. Outside counted more than 145 within 24 hours; tallies differ.",
+  "stat": 150,
+  "unit": "summits",
+  "source_title": "A. Benavides, Number of Climbers on K2 Soars (ExplorersWeb, July 2024)",
+  "source_url": "https://explorersweb.com/number-of-climbers-on-k2-soar/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "O. Clarke, Is K2, the 'Savage Mountain,' Becoming Less Deadly? (Outside, Aug 2022, via Yahoo)",
+    "url": "https://www.yahoo.com/lifestyle/k2-savage-mountain-becoming-less-154359117.html"
+   }
+  ]
+ },
+ {
+  "id": "summits-total",
+  "chapter": 5,
+  "hotspot": null,
+  "title": "Roughly 900 summits since 1954",
+  "body": "Alan Arnette counted about 516 K2 summits through spring 2022. Adding about 200 in 2022, 112 in 2023, 50 to 65 in 2024 and about 42 in 2025 gives roughly 905 to 935 summits by the end of 2025. Everest passed 13,700 in the same period. This is our estimate.",
+  "stat": "905–935",
+  "unit": "summits (estimate)",
+  "source_title": "A. Arnette, K2 2022 Summer Coverage: How Hard is K2? (alanarnette.com, June 2022)",
+  "source_url": "https://www.alanarnette.com/2022/06/20/k2-2022-summer-coverage-how-hard-is-k2/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "O. Clarke, Is K2, the 'Savage Mountain,' Becoming Less Deadly? (Outside, Aug 2022, via Yahoo)",
+    "url": "https://www.yahoo.com/lifestyle/k2-savage-mountain-becoming-less-154359117.html"
+   },
+   {
+    "title": "A. Benavides, Number of Climbers on K2 Soars (ExplorersWeb, July 2024)",
+    "url": "https://explorersweb.com/number-of-climbers-on-k2-soar/"
+   },
+   {
+    "title": "A. Arnette, K2 2024 Coverage: Summits and Deaths (alanarnette.com)",
+    "url": "https://www.alanarnette.com/2024/07/28/k2-2024-coverage-summits/"
+   },
+   {
+    "title": "A. Arnette, K2 2025 Coverage Wrap: A Rocky Season (alanarnette.com)",
+    "url": "https://www.alanarnette.com/blog/2025/08/24/k2-2025-coverage-wrap-a-rocky-season/"
+   },
+   {
+    "title": "A. Arnette, Everest by the Numbers: 2026 Edition (alanarnette.com, Himalayan Database data)",
+    "url": "https://www.alanarnette.com/2026/01/26/everest-by-the-numbers-2026-edition/"
+   }
+  ]
+ },
+ {
+  "id": "season-2025",
+  "chapter": 5,
+  "hotspot": null,
+  "title": "A rocky 2025",
+  "body": "In 2025 K2 had 42 summits, all in August, and two deaths: Iftikhar Hussain Sadpara, killed by rockfall between Advanced Base Camp and Camp 1 on 18 July, and Guan Jing of China, struck by a rock on the descent on 12 August. SnowBrains gives the summit total as 41.",
+  "stat": 42,
+  "unit": "summits",
+  "source_title": "A. Arnette, K2 2025 Coverage Wrap: A Rocky Season (alanarnette.com)",
+  "source_url": "https://www.alanarnette.com/blog/2025/08/24/k2-2025-coverage-wrap-a-rocky-season/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "No One Summited K2 This Year, Capping a Brutal Season in the Karakoram (SnowBrains, Aug 2026)",
+    "url": "https://snowbrains.com/no-one-summited-k2-brutal-karakoram-season/"
+   }
+  ]
+ },
+ {
+  "id": "season-2026",
+  "chapter": 5,
+  "hotspot": null,
+  "title": "Nobody on top in 2026",
+  "body": "No one reached K2's summit in 2026, for the first time in years. About 50 people tried, according to Alan Arnette. Heavy snow through July slowed rope-fixing and loaded the slopes, and rockfall and high winds battered the mountain.",
+  "stat": 0,
+  "unit": "summits",
+  "source_title": "A. Arnette, Karakorum 2026 Season Wrap Up (alanarnette.com, Aug 2026)",
+  "source_url": "https://www.alanarnette.com/2026/08/22/karakorum-2026-season-wrap-up/",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "No One Summited K2 This Year, Capping a Brutal Season in the Karakoram (SnowBrains, Aug 2026)",
+    "url": "https://snowbrains.com/no-one-summited-k2-brutal-karakoram-season/"
+   }
+  ]
+ },
+ {
+  "id": "purja-broad-peak-2026",
+  "chapter": 5,
+  "hotspot": "broad-peak",
+  "title": "Loss on Broad Peak, July 2026",
+  "body": "On 30 July 2026 an avalanche on Broad Peak, K2's neighbour, swept a team of ten climbers from about 6,660 m. All ten died. Among them was Nirmal Purja, 43, who had led the first winter ascent of K2 five years earlier.",
+  "stat": 10,
+  "unit": "deaths",
+  "source_title": "A. Callaghan and G. Schaffer, How Nims Purja's Broad Peak climb ended in deadly disaster (National Geographic, Aug 2026)",
+  "source_url": "https://www.nationalgeographic.com/adventure/article/nims-purja-avalanche-broad-peak-himalayas",
+  "verified_on": "2026-10-02",
+  "alt_sources": [
+   {
+    "title": "EliteExped Confirms Nirmal Purja Dead on Broad Peak (ExplorersWeb, Aug 2026)",
+    "url": "https://explorersweb.com/eliteexped-confirms-nirmal-purja-dead-on-broad-peak/"
+   }
+  ]
  }
 ]

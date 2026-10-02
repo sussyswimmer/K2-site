@@ -88,6 +88,7 @@
 .vs-bar--everest span { background: var(--ice-300); }
 .vs-bar--k2 span { background: var(--amber); }
 .vs-val { font-variant-numeric: tabular-nums; color: var(--ice-50); white-space: nowrap; }
+.vs-bars--plain .vs-bar { visibility: hidden; }
 .vs-est { font-size: 11px; color: var(--amber-hi); margin-left: 6px; }
 
 /* timeline */

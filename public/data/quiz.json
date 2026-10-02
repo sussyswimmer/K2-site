@@ -1,0 +1,92 @@
+{
+ "questions": [
+  {
+   "question": "How high is K2?",
+   "options": [
+    "8,091 m",
+    "8,611 m",
+    "8,849 m",
+    "8,516 m"
+   ],
+   "answer": 1,
+   "fact_id": "height-8611"
+  },
+  {
+   "question": "Where does the name \"K2\" come from?",
+   "options": [
+    "It is the Balti name for the mountain",
+    "It was the second peak climbed in the Karakoram",
+    "A survey code: the second Karakoram peak Montgomerie tagged in 1856",
+    "It is named after the K2 Glacier"
+   ],
+   "answer": 2,
+   "fact_id": "k2-name"
+  },
+  {
+   "question": "Which glacier do expeditions walk up for about a week to reach K2?",
+   "options": [
+    "The Baltoro",
+    "The Khumbu",
+    "The Siachen",
+    "The Rongbuk"
+   ],
+   "answer": 0,
+   "fact_id": "baltoro-glacier"
+  },
+  {
+   "question": "Who first stood on K2's summit, on 31 July 1954?",
+   "options": [
+    "Charles Houston and Bob Bates",
+    "Hermann Buhl and Kurt Diemberger",
+    "Reinhold Messner and Michael Dacher",
+    "Achille Compagnoni and Lino Lacedelli"
+   ],
+   "answer": 3,
+   "fact_id": "first-ascent-1954"
+  },
+  {
+   "question": "Roughly what share of all K2 summits have used the Abruzzi Spur?",
+   "options": [
+    "About a quarter",
+    "About three in four",
+    "About half",
+    "Nearly all"
+   ],
+   "answer": 1,
+   "fact_id": "abruzzi-share"
+  },
+  {
+   "question": "What makes the Bottleneck so dangerous?",
+   "options": [
+    "It is the longest stretch without fixed ropes",
+    "It is a crevasse field below Camp 1",
+    "A steep couloir that runs beneath a hanging serac",
+    "It crosses the border into China"
+   ],
+   "answer": 2,
+   "fact_id": "bottleneck"
+  },
+  {
+   "question": "At 8,000 m, how much oxygen does each breath hold compared with sea level?",
+   "options": [
+    "About a third",
+    "About half",
+    "About two-thirds",
+    "About a tenth"
+   ],
+   "answer": 0,
+   "fact_id": "pressure-8000"
+  },
+  {
+   "question": "Who made the first winter ascent of K2, in January 2021?",
+   "options": [
+    "A Polish expedition",
+    "Reinhold Messner, alone",
+    "An Italian team on the Abruzzi",
+    "Ten Nepali climbers, together"
+   ],
+   "answer": 3,
+   "fact_id": "winter-2021"
+  }
+ ]
+}
