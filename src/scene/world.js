@@ -72,6 +72,7 @@ export async function startWorld({ caps, sidepanel, onProgress, onChapter }) {
   let override = null;        // { pos, look } camera target set by a widget
   const overrideCur = { pos: new THREE.Vector3(), look: new THREE.Vector3() };
   let routeFocus = null;      // 'abruzzi' | 'cesen' | null
+  let focusStart = 0;
   let weather = null;         // { snowBoost, storm, snow } from the weather simulator
 
   const story = createStory({
@@ -120,10 +121,21 @@ export async function startWorld({ caps, sidepanel, onProgress, onChapter }) {
     const cI = routeFocus ? (routeFocus === 'cesen' ? 1.25 : 0.18) : fx.cesenIntensity;
     routes.set('abruzzi', { reveal: aR, intensity: layers.routes ? aI : 0 });
     routes.set('cesen', { reveal: cR, intensity: layers.routes ? cI : 0 });
-    // camps light up one by one with the Climb; Cesen camps follow the cesen line
-    markers.order.slice(0, 6).forEach((id, k) => markers.setCamp(id, fullAll ? 1 : clamp01(fx.camps - k)));
-    [['cesen-c1', 5950], ['cesen-c2', 6400], ['cesen-c3', 7000]].forEach(([id, z]) =>
-      markers.setCamp(id, routeFocus === 'abruzzi' ? 0 : clamp01((cR - z) / 220)));
+    // camps light up one by one with the Climb; Cesen camps follow the cesen line.
+    // With a route focused (Route Explorer) that route's camps pop in in order.
+    const age = routeFocus ? t - focusStart : 0;
+    const pop = (k) => clamp01(age * 2.2 - k * 0.35);
+    markers.order.slice(0, 6).forEach((id, k) => {
+      let a;
+      if (routeFocus === 'abruzzi') a = pop(k);
+      else if (routeFocus === 'cesen') a = id === 'base-camp' ? 1 : id === 'camp-4' ? pop(4) : 0;
+      else a = exploring ? 1 : clamp01(fx.camps - k);
+      markers.setCamp(id, a);
+    });
+    [['cesen-c1', 5950], ['cesen-c2', 6400], ['cesen-c3', 7000]].forEach(([id, z], j) => {
+      const a = routeFocus === 'cesen' ? pop(j + 1) : routeFocus === 'abruzzi' ? 0 : clamp01((cR - z) / 220);
+      markers.setCamp(id, a);
+    });
     markers.setFlag(Math.max(fx.flag, exploring ? 1 : 0));
     // intro video fades into the live scene
     const vo = exploring ? 0 : 1 - THREE.MathUtils.smoothstep(fx.p, 0.03, 0.09);
@@ -195,6 +207,8 @@ export async function startWorld({ caps, sidepanel, onProgress, onChapter }) {
   let still = 0;
   let frame = 0;
   let wasBlending = false;
+  let frozen = false;
+  let renderedOnce = false;
   function tick() {
     timer.update();
     const dt = Math.min(timer.getDelta(), 0.1);
@@ -225,6 +239,10 @@ export async function startWorld({ caps, sidepanel, onProgress, onChapter }) {
       focus = rig.update(fx.p, dt);
     }
     wasBlending = false;
+    // While the intro video still covers the screen the 3D frame is invisible: skip it.
+    const covered = !exploring && !override && fx.p < 0.028;
+    if (covered && renderedOnce) { altimeter.update(camera.position.y); return; }
+    renderedOnce = true;
     updateNearFar(camera, heightmap);
     env.update(camera, focus, dt);
     clouds.update(t);
@@ -239,11 +257,25 @@ export async function startWorld({ caps, sidepanel, onProgress, onChapter }) {
   // Compile shaders off the main thread where supported, then start.
   rig.update(0, 0);
   applyFx();
-  // Compile shaders up front (off the main thread where KHR_parallel_shader_compile exists).
-  if (renderer.extensions.has('KHR_parallel_shader_compile')) await renderer.compileAsync(scene, camera).catch(() => {});
-  else renderer.compile(scene, camera);
+  // Warm up in small slices so no single task blocks the page: upload textures one at a
+  // time, then compile shaders object by object (async where KHR_parallel_shader_compile exists).
+  const yieldTask = () => new Promise((r) => setTimeout(r, 0));
+  const textures = new Set([terrainUniforms.uCoreMap.value]);
+  scene.traverse((o) => {
+    for (const mat of [].concat(o.material || [])) {
+      for (const k of ['map', 'normalMap', 'aoMap', 'emissiveMap', 'roughnessMap', 'metalnessMap']) if (mat[k]) textures.add(mat[k]);
+    }
+  });
+  for (const tex of textures) { if (tex) renderer.initTexture(tex); await yieldTask(); }
+  const parallel = renderer.extensions.has('KHR_parallel_shader_compile');
+  for (const child of [...scene.children]) {
+    if (parallel) await renderer.compileAsync(child, camera, scene).catch(() => {});
+    else renderer.compile(child, camera, scene);
+    await yieldTask();
+  }
   renderer.setAnimationLoop(tick);
   document.addEventListener('visibilitychange', () => {
+    if (frozen) return;
     renderer.setAnimationLoop(document.hidden ? null : tick);
     timer.reset?.();
   });
@@ -253,7 +285,7 @@ export async function startWorld({ caps, sidepanel, onProgress, onChapter }) {
     mode: 'webgl',
     camera,
     story,
-    focusRoute(key) { routeFocus = key; },
+    focusRoute(key) { if (key !== routeFocus) focusStart = t; routeFocus = key; },
     flyTo(pos, look) {
       if (!override) { overrideCur.pos.copy(camera.position); overrideCur.look.copy(rig.look); }
       override = { pos: new THREE.Vector3(...pos), look: new THREE.Vector3(...look) };
@@ -277,7 +309,13 @@ export async function startWorld({ caps, sidepanel, onProgress, onChapter }) {
       story.seek(p);
       rig.snap();
       lastP = -1;
+      still = 0;
       tick();
+    },
+    // Stop the render loop (tests / frame-by-frame recording render once per seek).
+    freeze(on = true) {
+      frozen = on;
+      renderer.setAnimationLoop(on ? null : tick);
     },
     state() {
       const ground = heightmap.heightAt(camera.position.x, camera.position.z);

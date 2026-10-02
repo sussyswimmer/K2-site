@@ -73,6 +73,30 @@ async function startStatic() {
 }
 
 // ---------------- WebGL story ----------------
+// Assets download straight away (the loader counts up the metres as bytes arrive), but
+// the CPU-heavy part — decoding, texture upload, shader compilation — waits for the first
+// sign of intent (scroll, key, tap). Until then the intro video covers the screen anyway.
+async function prefetch(urls, onProgress) {
+  let done = 0;
+  const sizes = new Map();
+  const got = new Map();
+  const report = () => {
+    const total = [...sizes.values()].reduce((a, b) => a + b, 0) || 1;
+    const have = [...got.values()].reduce((a, b) => a + b, 0);
+    onProgress(Math.min(have / total, done / urls.length + 0.001));
+  };
+  await Promise.all(urls.map(async (u) => {
+    try {
+      const r = await fetch(asset(u));
+      sizes.set(u, Number(r.headers.get('content-length')) || 1);
+      const reader = r.body?.getReader();
+      if (reader) for (;;) { const { done: d, value } = await reader.read(); if (d) break; got.set(u, (got.get(u) || 0) + value.length); report(); }
+    } catch { /* the real load will retry and surface errors */ }
+    done++;
+    report();
+  }));
+}
+
 async function startWebGL() {
   const loader = document.getElementById('loader');
   const count = document.getElementById('loader-count');
@@ -89,6 +113,10 @@ async function startWebGL() {
     if (shown < 1) requestAnimationFrame(step);
   };
   requestAnimationFrame(step);
+  const chapters = [...document.querySelectorAll('.chapter')];
+  const nav = [...document.querySelectorAll('.hud__chapters a')];
+  chapters[0].classList.add('is-active');
+  nav[0].setAttribute('aria-current', 'step');
 
   const drawer = createDrawer({
     onOpen: () => window.__k2.api?.story.lenis.stop(),
@@ -102,48 +130,60 @@ async function startWebGL() {
   });
   document.querySelectorAll('[data-widget]').forEach((b) => b.addEventListener('click', () => {
     const name = b.dataset.widget;
-    drawer.open(name, WIDGETS[name].label, (el) => mountWidget(name, el, window.__k2.api || STATIC_CTX));
+    drawer.open(name, WIDGETS[name].label, async (el) => {
+      const cleanup = await mountWidget(name, el, window.__k2.api || STATIC_CTX);
+      renderUnits(el);
+      return cleanup;
+    });
   }));
 
-  // On phones the cards sit over the lower half of the scene: let readers fold them away.
-  document.querySelectorAll('.story .card').forEach((card) => {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'card__toggle';
-    b.setAttribute('aria-expanded', 'true');
-    b.setAttribute('aria-label', 'Collapse text');
-    b.innerHTML = '<span aria-hidden="true"></span>';
-    b.addEventListener('click', () => {
-      const collapsed = document.documentElement.classList.toggle('cards-collapsed');
-      document.querySelectorAll('.card__toggle').forEach((t) => {
-        t.setAttribute('aria-expanded', String(!collapsed));
-        t.setAttribute('aria-label', collapsed ? 'Expand text' : 'Collapse text');
-      });
-    });
-    card.prepend(b);
+  // 1 · download (terrain choice mirrors the low-end rule in world.js)
+  const terrainFile = caps.lowEnd ? 'models/k2_terrain_lo.glb' : 'models/k2_terrain.glb';
+  const PREFETCH = ['models/heightmap_256.bin', 'models/k2_core_albedo.webp', 'models/route_abruzzi.glb', 'models/route_cesen.glb',
+    'models/plinth.glb', 'models/section_slab.glb', 'models/prop_tent.glb', 'models/prop_flag.glb'];
+  // let the poster (the largest paint) and fonts land first, then pull the 3D assets
+  await new Promise((r) => (document.readyState === 'complete' ? r() : addEventListener('load', r, { once: true })));
+  const worldModule = import('./scene/world.js');
+  await prefetch([terrainFile, ...PREFETCH], (f) => { target = Math.max(target, f * 0.92); });
+  target = 1;
+  note.textContent = 'Ready';
+  loader.classList.add('is-done');
+  const video = document.getElementById('intro-video');
+  video.preload = 'auto';
+  video.play().catch(() => {});
+
+  // 2 · build the scene on the first sign of intent
+  let pending = null;
+  const intent = new Promise((resolve) => {
+    const go = (e) => {
+      const jump = e?.target?.closest?.('[data-jump]');
+      if (jump) { e.preventDefault(); pending = { jump: Number(jump.dataset.jump) }; }
+      if (e?.target?.closest?.('[data-action="explore"], #explore-toggle')) { e.preventDefault(); e.stopImmediatePropagation(); pending = { explore: true }; }
+      ['wheel', 'touchstart', 'keydown', 'pointerdown', 'scroll'].forEach((t) => window.removeEventListener(t, go, true));
+      resolve();
+    };
+    ['wheel', 'touchstart', 'keydown', 'pointerdown', 'scroll'].forEach((t) => window.addEventListener(t, go, { capture: true, passive: t !== 'pointerdown' && t !== 'keydown' }));
+    if (new URLSearchParams(location.search).has('autostart') || window.scrollY > 0) resolve();
   });
-  const nav = [...document.querySelectorAll('.hud__chapters a')];
-  const chapters = [...document.querySelectorAll('.chapter')];
+  window.__k2.start = () => intent; // tests can await this after dispatching a key/scroll
+  await intent;
+  document.documentElement.classList.add('is-building');
+
   try {
-    const { startWorld } = await import('./scene/world.js');
+    const { startWorld } = await worldModule;
     const api = await startWorld({
       caps,
       sidepanel,
-      onProgress: (f) => {
-        target = Math.max(target, Math.min(f, 1));
-        note.textContent = f < 1 ? 'Loading terrain, routes and textures…' : 'Compiling shaders…';
-      },
+      onProgress: () => {},
       onChapter: (i) => {
         chapters.forEach((c, k) => c.classList.toggle('is-active', k === i));
         nav.forEach((a, k) => (k === i ? a.setAttribute('aria-current', 'step') : a.removeAttribute('aria-current')));
       },
     });
     window.__k2.api = api;
-    target = 1;
-    loader.classList.add('is-done');
-    const video = document.getElementById('intro-video');
-    video.preload = 'auto';
-    video.play().catch(() => {});
+    document.documentElement.classList.remove('is-building');
+    if (pending?.jump !== undefined) api.story.jumpTo(pending.jump);
+    if (pending?.explore) document.getElementById('explore-toggle').click();
     return api;
   } catch (err) {
     console.error('3D failed, falling back to the static page', err);

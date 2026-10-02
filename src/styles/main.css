@@ -414,3 +414,14 @@ h3 { font: 600 12px/1.3 var(--font-body); letter-spacing: 0.18em; text-transform
   .altimeter__readout { margin: 0; }
   .altimeter__secondary { display: none; }
 }
+
+/* small status pill while the 3D scene is being built after the first interaction */
+.building {
+  position: fixed; z-index: 55; left: 50%; bottom: 20px; transform: translate(-50%, 12px); margin: 0;
+  display: flex; align-items: center; gap: 10px; padding: 9px 16px; border-radius: 999px;
+  background: var(--glass-strong); border: 1px solid var(--line); font-size: 13px; color: var(--ice-100);
+  opacity: 0; visibility: hidden; transition: opacity 0.4s, transform 0.4s var(--ease), visibility 0s 0.4s;
+}
+.is-building .building { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition-delay: 0.25s, 0.25s, 0s; }
+.building__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); animation: pulse 1s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: 0.3; transform: scale(0.7); } }

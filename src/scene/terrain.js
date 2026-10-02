@@ -135,11 +135,15 @@ export async function loadWorld({ manager, lowEnd, renderer }) {
       });
     }
   });
-  const m = terrainMesh.material;
+  // glTF gives a MeshPhysicalMaterial; the terrain only needs the cheaper standard model.
+  const src = terrainMesh.material;
+  const m = new THREE.MeshStandardMaterial({
+    map: src.map, normalMap: src.normalMap, normalScale: src.normalScale, aoMap: src.aoMap,
+    roughness: 0.95, metalness: 0, aoMapIntensity: 0.85,
+  });
+  src.dispose();
+  terrainMesh.material = m;
   [m.map, m.normalMap, m.aoMap].forEach((t) => { if (t) t.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy()); });
-  m.roughness = 0.95;
-  m.metalness = 0;
-  m.aoMapIntensity = 0.85;
   patchTerrainMaterial(m);
   terrainMesh.receiveShadow = !lowEnd;
   terrainMesh.castShadow = !lowEnd;

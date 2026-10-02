@@ -1,0 +1,231 @@
+{
+ "as_of": "2026-10-02",
+ "note": "Approximate, typical conditions, not forecasts. Summit (~8,600 m, ~325–350 hPa): monthly means read from published ERA5 climatology charts (1979–2021); range = ±1 standard deviation of daily wind. Base camp (~5,000 m): NASA POWER/MERRA-2 24-hour mean, 2001–2020.",
+ "months": [
+  {
+   "month": 1,
+   "name": "January",
+   "summit_wind_kmh": 95,
+   "summit_wind_range_kmh": [
+    60,
+    130
+   ],
+   "summit_temp_c": -45,
+   "basecamp_temp_c": -24,
+   "window": "no",
+   "summary": "Jet stream overhead: summit winds about 95 km/h, air about −45 °C. The first winter summit (16 Jan 2021) needed a rare calm ridge.",
+   "estimate": true
+  },
+  {
+   "month": 2,
+   "name": "February",
+   "summit_wind_kmh": 95,
+   "summit_wind_range_kmh": [
+    60,
+    125
+   ],
+   "summit_temp_c": -45,
+   "basecamp_temp_c": -21,
+   "window": "no",
+   "summary": "Deep winter continues: summit air about −45 °C with jet-stream winds near 95 km/h. Hardly any day is calm enough to climb.",
+   "estimate": true
+  },
+  {
+   "month": 3,
+   "name": "March",
+   "summit_wind_kmh": 85,
+   "summit_wind_range_kmh": [
+    55,
+    110
+   ],
+   "summit_temp_c": -42,
+   "basecamp_temp_c": -18,
+   "window": "no",
+   "summary": "Still winter aloft: summit winds about 85 km/h, air near −42 °C. The jet stream only starts weakening late in the month.",
+   "estimate": true
+  },
+  {
+   "month": 4,
+   "name": "April",
+   "summit_wind_kmh": 65,
+   "summit_wind_range_kmh": [
+    35,
+    90
+   ],
+   "summit_temp_c": -37,
+   "basecamp_temp_c": -12,
+   "window": "no",
+   "summary": "The jet stream starts drifting north and winds drop to about 65 km/h, but summit air is still near −37 °C.",
+   "estimate": true
+  },
+  {
+   "month": 5,
+   "name": "May",
+   "summit_wind_kmh": 55,
+   "summit_wind_range_kmh": [
+    30,
+    75
+   ],
+   "summit_temp_c": -33,
+   "basecamp_temp_c": -8,
+   "window": "no",
+   "summary": "Winds ease to near-summer levels (about 55 km/h) yet summit air stays around −33 °C. Expeditions have not arrived yet.",
+   "estimate": true
+  },
+  {
+   "month": 6,
+   "name": "June",
+   "summit_wind_kmh": 55,
+   "summit_wind_range_kmh": [
+    30,
+    80
+   ],
+   "summit_temp_c": -27,
+   "basecamp_temp_c": -4,
+   "window": "marginal",
+   "summary": "Expeditions arrive and fix ropes. Summit warms to about −27 °C with winds near 55 km/h; summit bids before July are rare.",
+   "estimate": true
+  },
+  {
+   "month": 7,
+   "name": "July",
+   "summit_wind_kmh": 55,
+   "summit_wind_range_kmh": [
+    30,
+    75
+   ],
+   "summit_temp_c": -21,
+   "basecamp_temp_c": 0,
+   "window": "yes",
+   "summary": "Best month: warmest summit air (about −21 °C), winds near 55 km/h, weak monsoon influence. Over 90% of summits happen in July, mostly late.",
+   "estimate": true
+  },
+  {
+   "month": 8,
+   "name": "August",
+   "summit_wind_kmh": 55,
+   "summit_wind_range_kmh": [
+    35,
+    75
+   ],
+   "summit_temp_c": -21,
+   "basecamp_temp_c": 0,
+   "window": "marginal",
+   "summary": "Early August is still mild (about −21 °C, winds near 55 km/h). A few summits seep into mid-August, then teams head home.",
+   "estimate": true
+  },
+  {
+   "month": 9,
+   "name": "September",
+   "summit_wind_kmh": 60,
+   "summit_wind_range_kmh": [
+    40,
+    85
+   ],
+   "summit_temp_c": -27,
+   "basecamp_temp_c": -5,
+   "window": "no",
+   "summary": "Summit cools to about −27 °C, winds near 60 km/h. Most expeditions have left; autumn ascents are rare (one was September 1978).",
+   "estimate": true
+  },
+  {
+   "month": 10,
+   "name": "October",
+   "summit_wind_kmh": 60,
+   "summit_wind_range_kmh": [
+    35,
+    85
+   ],
+   "summit_temp_c": -35,
+   "basecamp_temp_c": -11,
+   "window": "no",
+   "summary": "Summit near −35 °C with winds around 60 km/h and rising. A couple of October summits happened decades ago, none recently.",
+   "estimate": true
+  },
+  {
+   "month": 11,
+   "name": "November",
+   "summit_wind_kmh": 80,
+   "summit_wind_range_kmh": [
+    50,
+    110
+   ],
+   "summit_temp_c": -40,
+   "basecamp_temp_c": -18,
+   "window": "no",
+   "summary": "The jet stream returns: summit winds about 80 km/h, air near −40 °C. Base camp averages around −18 °C.",
+   "estimate": true
+  },
+  {
+   "month": 12,
+   "name": "December",
+   "summit_wind_kmh": 95,
+   "summit_wind_range_kmh": [
+    65,
+    130
+   ],
+   "summit_temp_c": -43,
+   "basecamp_temp_c": -22,
+   "window": "no",
+   "summary": "Full winter: summit winds about 95 km/h and air near −43 °C. Winter expeditions arrive to face jet-stream storms.",
+   "estimate": true
+  }
+ ],
+ "sources": [
+  {
+   "title": "Matthews et al. (2021), 'Weather on K2 during historic first winter ascent', Weather (RMetS), doi:10.1002/wea.4094 — accepted manuscript, Loughborough University repository",
+   "url": "https://ndownloader.figshare.com/files/31511303",
+   "used_for": "Month-by-month summit temperature and wind speed (and ±1 SD wind range), digitised from Fig. 2 ERA5 day-of-year climatology (1979–2021) interpolated to K2's summit; winter 2020/21 extremes; 16 Jan 2021 ridge."
+  },
+  {
+   "title": "Szymczak et al. (2021), 'Comparison of Environmental Conditions on Summits of Mount Everest and K2 in Climbing and Midwinter Seasons', IJERPH 18:3040",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8000062/",
+   "used_for": "Cross-check of ERA5 summit means: July −21 ± 1 °C / 15 ± 3 m/s; January and February −45 °C / 27 ± 4 m/s; summit pressure 325–347 hPa; jet-stream explanation (weakens and shifts north in summer)."
+  },
+  {
+   "title": "Szymczak et al. (2021), 'Death Zone Weather Extremes Mountaineers Have Experienced in Successful Ascents', Frontiers in Physiology",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8287323/",
+   "used_for": "K2 climbing season in July and August; summit-day conditions averaging −19 °C and 12 ± 5 m/s; 16 Jan 2021 winter summit at about −40 °C and 5 m/s."
+  },
+  {
+   "title": "NASA POWER Climatology API — MERRA-2 2-m air temperature, 2001–2020, grid point 35.83°N 76.51°E (grid elevation 5,153 m)",
+   "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=T2M,T2M_MAX,T2M_MIN&community=AG&longitude=76.51&latitude=35.83&format=JSON",
+   "used_for": "Monthly base-camp temperatures (24-hour mean T2M, rounded to 1 °C)."
+  },
+  {
+   "title": "Mayer et al. (2006), 'Glaciological characteristics of the ablation zone of Baltoro glacier, Karakoram, Pakistan', Annals of Glaciology 43",
+   "url": "https://www.cambridge.org/core/journals/annals-of-glaciology/article/glaciological-characteristics-of-the-ablation-zone-of-baltoro-glacier-karakoram-pakistan/15D82A0F246442DDBD05B3DEA3585B20",
+   "used_for": "Cross-check: measured mean daytime (06–18 h) temperature at K2 base camp of 2.1 °C, 8 July–4 August 2004."
+  },
+  {
+   "title": "FAO Mountain Partnership, 'Monitoring K2 climate data in real time' (SHARE station near K2 Base Camp, July 2014)",
+   "url": "https://www.fao.org/mountain-partnership/news/newsroom/news-detail/Monitoring-K2-climate-data-in-real-time-/en",
+   "used_for": "Cross-check: first readings at the 4,970 m base-camp station ranged −1 to 6.9 °C in July."
+  },
+  {
+   "title": "Alan Arnette, 'K2 Summer 2022: Weekend Update July 30, 2022 – A Summer of Summits'",
+   "url": "https://www.alanarnette.com/blog/2022/07/30/k2-summer-2022-a-summer-of-summits/",
+   "used_for": "Well over 90% of K2 summits occur in July; some seep into mid-August; a couple of October summits decades ago."
+  },
+  {
+   "title": "Alan Arnette, 'K2 2026: Coverage Begins & First Summits'",
+   "url": "https://www.alanarnette.com/2026/07/09/k2-2026-coverage-begins-first-summits/",
+   "used_for": "Most K2 summits occur at the end of July."
+  },
+  {
+   "title": "Elite Exped, 'The Best Season for a Successful K2 Climb' (secondary, operator write-up)",
+   "url": "https://www.eliteexped.com/best-season-for-a-successful-k2-climb",
+   "used_for": "Season framing (mid-June to September, best July–August); base camp around 6 °C in summer; winter base camp −30 °C by day, −40 °C at night (suggests 24-hour reanalysis means understate winter cold at camp)."
+  },
+  {
+   "title": "Alan Arnette, 'Winter K2 Update: Chillin' at Base Camp' (6 Jan 2021)",
+   "url": "https://www.alanarnette.com/blog/2021/01/06/winter-k2-update-chillin-at-base-camp/",
+   "used_for": "Context only: winter 2021 base-camp reports of temperatures down to −50 °C and hurricane-strength winds."
+  },
+  {
+   "title": "NOAA GFDL research highlight on Kapnick et al. (2014), Nature Geoscience: 'Karakoram snowfall less sensitive to warming than Himalayas due to a unique seasonal cycle'",
+   "url": "https://www.gfdl.noaa.gov/research_highlight/karakoram-snowfall-less-sensitive-to-warming-than-himalayas-due-to-a-unique-seasonal-cycle/",
+   "used_for": "Karakoram precipitation comes mostly from winter westerlies, whereas the rest of the Himalaya is monsoon-dominated (weak monsoon influence in July)."
+  }
+ ]
+}

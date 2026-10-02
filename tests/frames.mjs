@@ -2,7 +2,7 @@
 // node tests/frames.mjs <outDir> <p1,p2,...> [w] [h] [query] [hideUI=1]
 import { chromium } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
-const [, , out = 'test-results/frames', list = '0.02,0.16,0.27,0.37,0.44,0.53,0.64,0.72,0.81,0.88,0.94,0.99', W = '1280', H = '720', query = '?high', hide = '1'] = process.argv;
+const [, , out = 'test-results/frames', list = '0.02,0.16,0.27,0.37,0.44,0.53,0.64,0.72,0.81,0.88,0.94,0.99', W = '1280', H = '720', query = '?high&autostart', hide = '1'] = process.argv;
 mkdirSync(out, { recursive: true });
 const browser = await chromium.launch({ args: ['--enable-unsafe-swiftshader', '--use-angle=swiftshader', '--ignore-gpu-blocklist'] });
 const page = await browser.newPage({ viewport: { width: +W, height: +H }, ignoreHTTPSErrors: true });

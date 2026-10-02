@@ -7,20 +7,24 @@
   <meta name="description" content="Fly up K2, the world's second-highest mountain (8,611 m), in a scroll-driven 3D model built from real Copernicus elevation data: the Baltoro approach, base camp, the Abruzzi Spur, the Bottleneck and the summit." />
   <meta name="theme-color" content="#07111f" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="canonical" href="https://k2-savage-mountain.netlify.app/" />
+  <link rel="canonical" href="__SITE__/" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="__SITE__/" />
   <meta property="og:title" content="K2 — The Savage Mountain" />
   <meta property="og:description" content="A scroll-driven 3D journey up the world's second-highest mountain, built from real elevation data." />
-  <meta property="og:image" content="/media/og_card.jpg" />
+  <meta property="og:image" content="__SITE__/media/og_card.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="K2's summit pyramid at dawn above the Godwin-Austen Glacier" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="__SITE__/media/og_card.jpg" />
   <script>
     // Decide the render mode before first paint so the static layout never flashes.
     (function () {
       var q = new URLSearchParams(location.search), gl = false;
-      try { var c = document.createElement('canvas'); gl = !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) {}
+      if (!q.has('nowebgl') && !q.has('static')) {
+        try { var c = document.createElement('canvas'); gl = !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) {}
+      }
       var reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
       var mode = (!gl || q.has('nowebgl') || q.has('static')) ? 'static nowebgl' : (reduced || q.has('reduced')) ? 'static reduced' : 'webgl';
       document.documentElement.className = 'js ' + mode.split(' ').map(function (m) { return 'mode-' + m; }).join(' ');
@@ -54,6 +58,8 @@
       <p class="loader__note" id="loader-note">Loading terrain…</p>
     </div>
   </div>
+
+  <p class="building" role="status" aria-live="polite"><span class="building__dot" aria-hidden="true"></span>Building the 3D mountain…</p>
 
   <!-- ===== HUD ===== -->
   <header class="hud" id="hud">

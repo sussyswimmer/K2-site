@@ -14,7 +14,7 @@ async function run(label, ctxOpts, mobile) {
   page.on('console', (m) => { if (['error', 'warning'].includes(m.type())) logs.push(`${m.type()}: ${m.text().slice(0, 160)}`); });
   page.on('pageerror', (e) => logs.push(`pageerror: ${e.message}`));
   page.on('response', (r) => { if (r.status() >= 400) logs.push(`HTTP ${r.status()} ${r.url()}`); });
-  await page.goto('http://localhost:4173/?high', { waitUntil: 'domcontentloaded' });
+  await page.goto('http://localhost:4173/?high&autostart', { waitUntil: 'domcontentloaded' });
   await page.waitForFunction(() => window.__k2?.api, null, { timeout: 180000 });
   ok(`${label} loader hidden`, await page.$eval('#loader', (e) => e.classList.contains('is-done')));
   // units toggle
