@@ -1,0 +1,131 @@
+[
+ {
+  "file": "public/media/hero_k2_dawn.webp",
+  "kb": 350,
+  "q": 82
+ },
+ {
+  "file": "public/media/hero_k2_dawn_1280.webp",
+  "kb": 126,
+  "q": 82
+ },
+ {
+  "file": "public/media/chapter_baltoro.webp",
+  "kb": 371,
+  "q": 74
+ },
+ {
+  "file": "public/media/chapter_baltoro_1280.webp",
+  "kb": 139,
+  "q": 82
+ },
+ {
+  "file": "public/media/chapter_basecamp.webp",
+  "kb": 367,
+  "q": 74
+ },
+ {
+  "file": "public/media/chapter_basecamp_1280.webp",
+  "kb": 148,
+  "q": 82
+ },
+ {
+  "file": "public/media/chapter_bottleneck.webp",
+  "kb": 351,
+  "q": 74
+ },
+ {
+  "file": "public/media/chapter_bottleneck_1280.webp",
+  "kb": 94,
+  "q": 82
+ },
+ {
+  "file": "public/media/chapter_summit.webp",
+  "kb": 220,
+  "q": 82
+ },
+ {
+  "file": "public/media/chapter_summit_1280.webp",
+  "kb": 84,
+  "q": 82
+ },
+ {
+  "file": "public/media/chapter_winter.webp",
+  "kb": 364,
+  "q": 78
+ },
+ {
+  "file": "public/media/chapter_winter_1280.webp",
+  "kb": 91,
+  "q": 82
+ },
+ {
+  "file": "public/media/mobile_hero.webp",
+  "kb": 357,
+  "q": 78
+ },
+ {
+  "file": "public/media/og_card.webp",
+  "kb": 120,
+  "q": 82
+ },
+ {
+  "file": "public/media/og_card.jpg",
+  "kb": 124
+ },
+ {
+  "file": "public/media/flythrough_intro_poster.webp",
+  "kb": 156,
+  "q": 82
+ },
+ {
+  "file": "public/media/flythrough_intro.mp4",
+  "kb": 2966
+ },
+ {
+  "file": "public/media/flythrough_intro.webm",
+  "kb": 2591
+ },
+ {
+  "file": "public/media/summit_wind_loop_poster.webp",
+  "kb": 118,
+  "q": 82
+ },
+ {
+  "file": "public/media/summit_wind_loop.mp4",
+  "kb": 520
+ },
+ {
+  "file": "public/media/summit_wind_loop.webm",
+  "kb": 183
+ },
+ {
+  "file": "public/media/storm_loop_poster.webp",
+  "kb": 111,
+  "q": 82
+ },
+ {
+  "file": "public/media/storm_loop.mp4",
+  "kb": 522
+ },
+ {
+  "file": "public/media/storm_loop.webm",
+  "kb": 179
+ },
+ {
+  "file": "public/models/prop_tent.glb",
+  "kb": 47
+ },
+ {
+  "file": "public/models/prop_oxygen_bottle.glb",
+  "kb": 46
+ },
+ {
+  "file": "public/models/prop_ice_axe.glb",
+  "kb": 25
+ },
+ {
+  "file": "public/models/prop_flag.glb",
+  "kb": 24
+ }
+]

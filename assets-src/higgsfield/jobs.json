@@ -1,0 +1,36 @@
+{
+ "project_id": "202f5a1d-7848-45b5-8e9e-fdd8c3306a08",
+ "reference_media": {
+  "K2_from_Concordia_-_3.jpg": "3e33eca8-5f38-44f0-94dc-da8f11eb2dac",
+  "K2_View_from_Concordia.jpg": "b63354bf-cef6-49d7-a7bf-e4583c5f9b03",
+  "Concordia_to_K2_Base_Camp.jpg": "f4ff3207-938e-4242-a29d-1c4b31a23db9"
+ },
+ "images_round1": {
+  "hero_k2_dawn": "4cee71ae-25d2-4527-a68d-8248b70cc787",
+  "chapter_baltoro": "2681d4ac-ab78-45e9-8803-d54baf773b6c",
+  "chapter_basecamp": "5d39ce7f-7824-4ffa-ba07-9339aeb1fe30",
+  "chapter_bottleneck": "05602bb2-1ada-4c5f-8cea-e85406c36245",
+  "chapter_summit": "77cafd1f-dd19-4be2-9686-d798a9feb7d2",
+  "chapter_winter": "08f39af8-c8c9-45d1-a8a3-876f8980994b",
+  "mobile_hero": "a409ad81-cf91-4869-ac6b-4a4f48455c33",
+  "src_prop_tent": "4c854d07-eb42-4ac5-8bc9-6214a7bcda04",
+  "src_prop_oxygen_bottle": "386ea961-5051-4785-aea9-ecc10cf7130b",
+  "src_prop_ice_axe": "26a2e1a8-e676-4684-ac95-70bcaa074b9e",
+  "src_prop_flag": "a87f8d57-ffc9-4b74-9ba5-86dfd811c97a"
+ },
+ "videos": {
+  "flythrough_intro": "d4624842-a5df-4fc6-8bd2-39e7328037bc",
+  "summit_wind_loop": "91fae7a5-fdfe-45ac-95b2-6347a098c057",
+  "storm_loop": "bbb9d555-58a1-4d31-ae81-cdf22c456c4f"
+ },
+ "upscales": {
+  "hero_k2_dawn_4k": "0e082354-44c6-444a-ae66-16acbb00ac2f",
+  "chapter_summit_4k": "6cf8de17-1c01-4841-989c-1f920d98f189"
+ },
+ "props_3d": {
+  "prop_tent": "7e362c6b-8d2f-4111-a92c-5c144269d935",
+  "prop_oxygen_bottle": "6768d3da-f654-4b25-9e1a-7dfd48bdfe2d",
+  "prop_ice_axe": "bf20f16a-8efd-49a1-ba75-8a60a7d6187f",
+  "prop_flag": "84dcd2b9-4232-4b58-8398-6ac9c1adce0e"
+ }
+}

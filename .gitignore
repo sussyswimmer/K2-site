@@ -27,3 +27,4 @@ assets-src/renders/frames/
 # OS
 .DS_Store
 assets-src/freecad/exports/terrain*.obj
+assets-src/higgsfield/raw/
