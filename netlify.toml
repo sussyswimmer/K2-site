@@ -29,6 +29,11 @@
 
 # The page itself: always revalidate so a new deploy shows up immediately.
 [[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
   for = "/index.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
